@@ -15,9 +15,9 @@ const Services = () => {
   const services = [
     {
       icon: Target,
-      title: "Premium Ad Accounts",
-      description: "Access high-trust advertising accounts across all major platforms with unlimited spending capabilities.",
-      features: ["Facebook & Instagram", "Google Ads", "TikTok Ads", "Snapchat"],
+      title: "Premium Agency Accounts",
+      description: "Access aged, warmed advertising accounts with established trust scores and unlimited spending limits across all platforms.",
+      features: ["Aged Facebook & Instagram", "High-Trust Google Ads", "Warmed TikTok Accounts", "Unlimited Spending Limits"],
       badge: "Most Popular"
     },
     {
@@ -63,11 +63,11 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Our Services
+              Agency Account Solutions
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to run successful advertising campaigns and scale your business to new heights.
+            Access premium, aged advertising accounts with unlimited spending capabilities. No more account bans or spending limits.
           </p>
         </div>
 

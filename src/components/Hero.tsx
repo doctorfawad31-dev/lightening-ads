@@ -20,15 +20,15 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Lightning Fast
+              Premium Agency
             </span>
             <br />
-            Marketing Solutions
+            Ad Accounts
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Access premium advertising accounts and scale your campaigns with our proven marketing agency services. 
-            Your success starts here.
+            Access aged, warmed marketing agency accounts with unlimited spending limits across all major platforms. 
+            Skip the restrictions and scale immediately.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -36,7 +36,7 @@ const Hero = () => {
               size="lg" 
               className="bg-gradient-primary hover:shadow-electric transition-all duration-300 px-8 py-6 text-lg group"
             >
-              Start Your Campaign
+              Get Agency Accounts
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             

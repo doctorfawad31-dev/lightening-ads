@@ -5,23 +5,23 @@ const Benefits = () => {
   const benefits = [
     {
       icon: Clock,
-      title: "Lightning Fast Setup",
-      description: "Get your campaigns running in under 24 hours with our streamlined onboarding process."
-    },
-    {
-      icon: DollarSign,
-      title: "Higher ROI Guaranteed",
-      description: "Our proven strategies deliver 3x better performance than industry averages."
+      title: "Instant Account Access",
+      description: "Get pre-warmed agency accounts ready to spend within 24 hours. No waiting for account approval."
     },
     {
       icon: Shield,
-      title: "100% Compliance",
-      description: "All accounts are fully compliant with platform policies and thoroughly vetted."
+      title: "Ban-Proof Accounts",
+      description: "Aged accounts with established trust scores and compliance history. Virtually ban-proof infrastructure."
+    },
+    {
+      icon: DollarSign,
+      title: "Unlimited Spending",
+      description: "No daily limits or spending restrictions. Scale your campaigns as high as your budget allows."
     },
     {
       icon: CheckCircle,
-      title: "Success Guaranteed",
-      description: "We don't succeed unless you do. Your success is our top priority."
+      title: "Account Replacement",
+      description: "If any account gets restricted, we replace it immediately at no extra cost. Your campaigns never stop."
     }
   ]
 
@@ -40,8 +40,8 @@ const Benefits = () => {
             </h2>
             
             <p className="text-xl text-muted-foreground mb-8">
-              We're not just another marketing agency. We're your partners in growth, 
-              providing the tools, accounts, and expertise you need to dominate your market.
+              We provide premium marketing agency accounts that eliminate the biggest pain points: account bans, 
+              spending limits, and approval delays. Focus on scaling, not account management.
             </p>
 
             <div className="space-y-6">
