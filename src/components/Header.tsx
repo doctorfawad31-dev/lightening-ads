@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
-import { Menu, Zap } from "lucide-react"
+import { Menu } from "lucide-react"
 import { useState } from "react"
+import logoImage from "@/assets/light-ads-logo.png"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -9,10 +10,12 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="p-2 bg-gradient-primary rounded-lg shadow-glow">
-              <Zap className="h-6 w-6 text-foreground" />
-            </div>
+          <div className="flex items-center space-x-3">
+            <img 
+              src={logoImage} 
+              alt="Lightning Ads Logo" 
+              className="h-10 w-auto"
+            />
             <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               Lightning Ads
             </span>

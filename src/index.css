@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 224 71.4% 4.1%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 217.2 91.2% 59.8%;
+    --primary: 45 100% 51%;
     --primary-foreground: 222.2 84% 4.9%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -26,23 +26,23 @@ All colors MUST be HSL.
     --muted: 215 27.9% 16.9%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 262.1 83.3% 57.8%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 45 100% 51%;
+    --accent-foreground: 222.2 84% 4.9%;
 
-    /* Lightning Ads Brand Colors */
+    /* Lightning Ads Brand Colors - Updated to match logo */
     --electric-blue: 217.2 91.2% 59.8%;
-    --electric-purple: 262.1 83.3% 57.8%;
+    --electric-gold: 45 100% 51%;
     --lightning-yellow: 48 96% 89%;
     --deep-space: 222.2 84% 4.9%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--electric-blue)), hsl(var(--electric-purple)));
+    --gradient-primary: linear-gradient(135deg, hsl(var(--electric-gold)), hsl(var(--electric-blue)));
     --gradient-hero: linear-gradient(135deg, hsl(222.2 84% 4.9%), hsl(224 71.4% 4.1%));
-    --gradient-accent: linear-gradient(90deg, hsl(var(--electric-blue)), hsl(var(--lightning-yellow)));
+    --gradient-accent: linear-gradient(90deg, hsl(var(--electric-gold)), hsl(var(--electric-blue)));
     
     /* Shadows */
-    --shadow-electric: 0 20px 40px -10px hsl(var(--electric-blue) / 0.3);
-    --shadow-glow: 0 0 60px hsl(var(--electric-blue) / 0.4);
+    --shadow-electric: 0 20px 40px -10px hsl(var(--electric-gold) / 0.3);
+    --shadow-glow: 0 0 60px hsl(var(--electric-gold) / 0.4);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -80,7 +80,7 @@ All colors MUST be HSL.
     --popover: 224 71.4% 4.1%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 217.2 91.2% 59.8%;
+    --primary: 45 100% 51%;
     --primary-foreground: 222.2 84% 4.9%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -89,8 +89,8 @@ All colors MUST be HSL.
     --muted: 215 27.9% 16.9%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 262.1 83.3% 57.8%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 45 100% 51%;
+    --accent-foreground: 222.2 84% 4.9%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;

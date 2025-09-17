@@ -1,4 +1,5 @@
-import { Zap, Mail, Phone, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin } from "lucide-react"
+import logoImage from "@/assets/light-ads-logo.png"
 
 const Footer = () => {
   return (
@@ -7,10 +8,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="p-2 bg-gradient-primary rounded-lg shadow-glow">
-                <Zap className="h-6 w-6 text-foreground" />
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src={logoImage} 
+                alt="Lightning Ads Logo" 
+                className="h-10 w-auto"
+              />
               <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
                 Lightning Ads
               </span>
