@@ -93,37 +93,29 @@ export default {
             height: "0",
           },
         },
-        "title-cycle": {
+        "fade-in-out": {
           "0%": {
+            opacity: "0",
+            transform: "translateY(10px)",
+          },
+          "10%": {
             opacity: "1",
             transform: "translateY(0)",
           },
-          "25%": {
-            opacity: "1",
-            transform: "translateY(0)",
-          },
-          "33.33%": {
-            opacity: "0",
-            transform: "translateY(-20px)",
-          },
-          "66.66%": {
-            opacity: "0",
-            transform: "translateY(-20px)",
-          },
-          "75%": {
+          "90%": {
             opacity: "1",
             transform: "translateY(0)",
           },
           "100%": {
-            opacity: "1",
-            transform: "translateY(0)",
+            opacity: "0",
+            transform: "translateY(-10px)",
           },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "title-cycle": "title-cycle 9s ease-in-out infinite",
+        "fade-in-out": "fade-in-out 4s ease-in-out infinite",
       },
     },
   },

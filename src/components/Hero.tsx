@@ -1,25 +1,24 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play } from "lucide-react"
 import heroImage from "@/assets/lightning-hero.jpg"
+import { useState, useEffect } from "react"
 
 const Hero = () => {
   const titles = [
-    {
-      line1: "Premium Agency",
-      line2: "Ad Accounts",
-      gradient: true
-    },
-    {
-      line1: "High-Trust Marketing",
-      line2: "Solutions",
-      gradient: true
-    },
-    {
-      line1: "Unlimited Spending",
-      line2: "Power",
-      gradient: true
-    }
+    "Premium Agency Ad Accounts",
+    "High-Trust Marketing Solutions", 
+    "Unlimited Spending Power"
   ]
+  
+  const [currentTitleIndex, setCurrentTitleIndex] = useState(0)
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTitleIndex((prev) => (prev + 1) % titles.length)
+    }, 4000) // Change every 4 seconds
+    
+    return () => clearInterval(interval)
+  }, [])
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -35,22 +34,13 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight relative h-32 md:h-40">
-            {titles.map((title, index) => (
-              <div
-                key={index}
-                className={`absolute inset-0 animate-title-cycle ${title.gradient ? 'bg-gradient-primary bg-clip-text text-transparent' : ''}`}
-                style={{ animationDelay: `${index * 3}s` }}
-              >
-                <div>
-                  {title.line1}
-                </div>
-                <br />
-                <div>
-                  {title.line2}
-                </div>
-              </div>
-            ))}
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            <span 
+              key={currentTitleIndex}
+              className="bg-gradient-primary bg-clip-text text-transparent animate-fade-in-out block"
+            >
+              {titles[currentTitleIndex]}
+            </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
