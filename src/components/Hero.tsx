@@ -1,8 +1,17 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play } from "lucide-react"
 import heroImage from "@/assets/lightning-hero.jpg"
+import { useState, useEffect } from "react"
 
 const Hero = () => {
+  const [animationStarted, setAnimationStarted] = useState(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setAnimationStarted(true)
+    }, 300)
+    return () => clearTimeout(timer)
+  }, [])
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -19,11 +28,35 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Premium Agency
-            </span>
+            <div className="bg-gradient-primary bg-clip-text text-transparent">
+              <span 
+                className={`inline-block opacity-0 ${animationStarted ? 'animate-word-slide-in' : ''}`}
+                style={{ animationDelay: '0s' }}
+              >
+                Premium&nbsp;
+              </span>
+              <span 
+                className={`inline-block opacity-0 ${animationStarted ? 'animate-word-slide-in' : ''}`}
+                style={{ animationDelay: '0.3s' }}
+              >
+                Agency
+              </span>
+            </div>
             <br />
-            Ad Accounts
+            <div>
+              <span 
+                className={`inline-block opacity-0 ${animationStarted ? 'animate-word-slide-in' : ''}`}
+                style={{ animationDelay: '0.8s' }}
+              >
+                Ad&nbsp;
+              </span>
+              <span 
+                className={`inline-block opacity-0 ${animationStarted ? 'animate-word-slide-in' : ''}`}
+                style={{ animationDelay: '1.1s' }}
+              >
+                Accounts
+              </span>
+            </div>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
