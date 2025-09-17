@@ -1,17 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play } from "lucide-react"
 import heroImage from "@/assets/lightning-hero.jpg"
-import { useState, useEffect } from "react"
 
 const Hero = () => {
-  const [animationStarted, setAnimationStarted] = useState(false)
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setAnimationStarted(true)
-    }, 300)
-    return () => clearTimeout(timer)
-  }, [])
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -30,14 +21,14 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <div className="bg-gradient-primary bg-clip-text text-transparent">
               <span 
-                className={`inline-block opacity-0 ${animationStarted ? 'animate-word-slide-in' : ''}`}
+                className="inline-block animate-word-slide-in"
                 style={{ animationDelay: '0s' }}
               >
                 Premium&nbsp;
               </span>
               <span 
-                className={`inline-block opacity-0 ${animationStarted ? 'animate-word-slide-in' : ''}`}
-                style={{ animationDelay: '0.3s' }}
+                className="inline-block animate-word-slide-in"
+                style={{ animationDelay: '0.5s' }}
               >
                 Agency
               </span>
@@ -45,14 +36,14 @@ const Hero = () => {
             <br />
             <div>
               <span 
-                className={`inline-block opacity-0 ${animationStarted ? 'animate-word-slide-in' : ''}`}
-                style={{ animationDelay: '0.8s' }}
+                className="inline-block animate-word-slide-in"
+                style={{ animationDelay: '1s' }}
               >
                 Ad&nbsp;
               </span>
               <span 
-                className={`inline-block opacity-0 ${animationStarted ? 'animate-word-slide-in' : ''}`}
-                style={{ animationDelay: '1.1s' }}
+                className="inline-block animate-word-slide-in"
+                style={{ animationDelay: '1.5s' }}
               >
                 Accounts
               </span>
