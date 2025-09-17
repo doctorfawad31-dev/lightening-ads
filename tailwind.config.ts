@@ -93,29 +93,37 @@ export default {
             height: "0",
           },
         },
-        "word-slide-in": {
+        "title-cycle": {
           "0%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+          "25%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+          "33.33%": {
             opacity: "0",
-            transform: "translateX(-30px)",
+            transform: "translateY(-20px)",
           },
-          "20%": {
-            opacity: "1",
-            transform: "translateX(0)",
+          "66.66%": {
+            opacity: "0",
+            transform: "translateY(-20px)",
           },
-          "80%": {
+          "75%": {
             opacity: "1",
-            transform: "translateX(0)",
+            transform: "translateY(0)",
           },
           "100%": {
-            opacity: "0",
-            transform: "translateX(30px)",
+            opacity: "1",
+            transform: "translateY(0)",
           },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "word-slide-in": "word-slide-in 3s ease-in-out infinite",
+        "title-cycle": "title-cycle 9s ease-in-out infinite",
       },
     },
   },
