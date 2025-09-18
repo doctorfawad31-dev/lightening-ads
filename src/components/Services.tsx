@@ -12,47 +12,47 @@ import {
 } from "lucide-react"
 
 const Services = () => {
-  const services = [
+const services = [
     {
       icon: Target,
-      title: "Premium Agency Accounts",
-      description: "Access aged, warmed advertising accounts with established trust scores and unlimited spending limits across all platforms.",
-      features: ["Aged Facebook & Instagram", "High-Trust Google Ads", "Warmed TikTok Accounts", "Unlimited Spending Limits"],
+      title: "Google Ads Agency Accounts",
+      description: "Premium Google Ads accounts with unlimited spending limits and established trust scores for Search, Display, and YouTube campaigns.",
+      features: ["Search Campaigns", "Display Network", "YouTube Advertising", "Shopping Campaigns"],
       badge: "Most Popular"
     },
     {
-      icon: TrendingUp,
-      title: "Campaign Management",
-      description: "Full-service campaign optimization and management by our team of certified experts.",
-      features: ["Campaign Setup", "A/B Testing", "Performance Optimization", "Reporting"],
+      icon: Users,
+      title: "Meta (Facebook & Instagram)",
+      description: "Aged Meta advertising accounts for Facebook and Instagram with high trust scores and no spending restrictions.",
+      features: ["Facebook Ads", "Instagram Ads", "Reels Advertising", "Stories Promotion"],
       badge: ""
     },
     {
+      icon: TrendingUp,
+      title: "TikTok for Business",
+      description: "High-performance TikTok advertising accounts for reaching younger demographics with creative campaign formats.",
+      features: ["In-Feed Ads", "Branded Effects", "TopView Campaigns", "Spark Ads"],
+      badge: "Trending"
+    },
+    {
       icon: Shield,
-      title: "Account Protection",
-      description: "Advanced account warming and protection services to ensure long-term campaign stability.",
-      features: ["Account Warming", "Compliance Monitoring", "Risk Management", "24/7 Support"],
+      title: "Snapchat Ads Manager",
+      description: "Premium Snapchat advertising accounts for creative AR campaigns and story advertising formats.",
+      features: ["Snap Ads", "Story Ads", "Collection Ads", "AR Lenses"],
       badge: ""
     },
     {
       icon: BarChart3,
-      title: "Analytics & Reporting",
-      description: "Comprehensive analytics dashboard and detailed performance reports for all your campaigns.",
-      features: ["Real-time Analytics", "Custom Reports", "ROI Tracking", "Conversion Attribution"],
-      badge: ""
-    },
-    {
-      icon: Users,
-      title: "Dedicated Support",
-      description: "Assigned account manager and priority support to ensure your success every step of the way.",
-      features: ["Dedicated Manager", "Priority Support", "Strategy Calls", "Onboarding"],
+      title: "LinkedIn Business & Twitter/X",
+      description: "Professional B2B advertising accounts for LinkedIn and Twitter/X with advanced targeting capabilities.",
+      features: ["Sponsored Content", "Message Ads", "Promoted Tweets", "Lead Generation"],
       badge: ""
     },
     {
       icon: Zap,
-      title: "Scaling Solutions",
-      description: "Advanced scaling strategies and tools to rapidly grow your advertising revenue.",
-      features: ["Vertical Scaling", "Creative Testing", "Audience Expansion", "Automation"],
+      title: "40+ Additional Platforms",
+      description: "Access agency accounts across Pinterest, Reddit, YouTube, Bing, and 35+ other advertising platforms.",
+      features: ["Pinterest Business", "Reddit Ads", "Bing Ads", "YouTube Premium"],
       badge: "Enterprise"
     }
   ]
@@ -67,7 +67,7 @@ const Services = () => {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Access premium, aged advertising accounts with unlimited spending capabilities. No more account bans or spending limits.
+            Access premium, aged advertising accounts across Google, Meta, TikTok, Snapchat, LinkedIn, and 40+ platforms. No more account bans or spending limits.
           </p>
         </div>
 
