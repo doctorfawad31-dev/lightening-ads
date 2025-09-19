@@ -13,7 +13,7 @@ const PlatformBanner = () => {
   ]
 
   return (
-    <section className="bg-card/50 backdrop-blur-sm py-8">
+    <section className="pt-24 pb-8 bg-background">
       <div className="container mx-auto px-6">
         {/* Platform Icons */}
         <div className="flex flex-wrap justify-center items-center gap-6 mb-6">
