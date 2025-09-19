@@ -1,52 +1,69 @@
-import { Zap, Target, Users, TrendingUp, Shield, BarChart3, Globe, Video, Camera, Smartphone } from "lucide-react"
+import { Zap } from "lucide-react"
+import GoogleAdsOfficial from "@/assets/icons/google-ads-official.png"
+import MetaOfficial from "@/assets/icons/meta-official.png"
+import TikTokOfficial from "@/assets/icons/tiktok-official.png"
+import SnapchatOfficial from "@/assets/icons/snapchat-official.png"
+import LinkedInOfficial from "@/assets/icons/linkedin-official.png"
+import PinterestOfficial from "@/assets/icons/pinterest-official.png"
+import TwitterXOfficial from "@/assets/icons/twitter-x-official.png"
 
 interface PlatformItem {
-  iconComponent: any
+  iconSrc?: string
+  iconComponent?: any
   name: string
   color: string
+  isLucide?: boolean
 }
 
 const PlatformBanner = () => {
   const platforms: PlatformItem[] = [
     { 
-      iconComponent: Target, 
+      iconSrc: GoogleAdsOfficial, 
       name: "Google Ads", 
-      color: "#4285F4"
+      color: "#4285F4",
+      isLucide: false
     },
     { 
-      iconComponent: Users, 
+      iconSrc: MetaOfficial, 
       name: "Meta", 
-      color: "#1877F2"
+      color: "#1877F2",
+      isLucide: false
     },
     { 
-      iconComponent: Video, 
+      iconSrc: TikTokOfficial, 
       name: "TikTok", 
-      color: "#000000"
+      color: "#000000",
+      isLucide: false
     },
     { 
-      iconComponent: Camera, 
+      iconSrc: SnapchatOfficial, 
       name: "Snapchat", 
-      color: "#FFFC00"
+      color: "#FFFC00",
+      isLucide: false
     },
     { 
-      iconComponent: Smartphone, 
+      iconSrc: LinkedInOfficial, 
       name: "LinkedIn", 
-      color: "#0A66C2"
+      color: "#0A66C2",
+      isLucide: false
     },
     { 
-      iconComponent: Shield, 
+      iconSrc: PinterestOfficial, 
       name: "Pinterest", 
-      color: "#E60023"
+      color: "#E60023",
+      isLucide: false
     },
     { 
-      iconComponent: BarChart3, 
+      iconSrc: TwitterXOfficial, 
       name: "Twitter", 
-      color: "#000000"
+      color: "#000000",
+      isLucide: false
     },
     { 
       iconComponent: Zap, 
       name: "More", 
-      color: "hsl(var(--primary))"
+      color: "hsl(var(--primary))",
+      isLucide: true
     }
   ]
 
@@ -63,7 +80,15 @@ const PlatformBanner = () => {
                 className="flex flex-col items-center group cursor-pointer"
               >
                 <div className="w-16 h-16 rounded-full bg-gray-800/80 backdrop-blur-sm flex items-center justify-center mb-2 group-hover:bg-gray-700/80 transition-all duration-300 group-hover:scale-110 border border-gray-600/30">
-                  <IconComponent className="w-8 h-8 text-primary group-hover:text-primary/80" />
+                  {platform.isLucide ? (
+                    <IconComponent className="w-8 h-8 text-primary group-hover:text-primary/80" />
+                  ) : (
+                    <img 
+                      src={platform.iconSrc} 
+                      alt={`${platform.name} logo`}
+                      className="w-10 h-10 object-contain"
+                    />
+                  )}
                 </div>
                 <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">
                   {platform.name}
