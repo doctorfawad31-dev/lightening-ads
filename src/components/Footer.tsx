@@ -65,7 +65,7 @@ const Footer = () => {
             © 2024 Lightning Ads. All rights reserved.
           </div>
           <div className="flex space-x-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
+            <a href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
             <a href="#" className="hover:text-primary transition-colors">Cookie Policy</a>
           </div>
