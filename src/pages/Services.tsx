@@ -178,8 +178,7 @@ const Services = () => {
                     </Button>
                   </CardContent>
                 </Card>
-              )
-            })}
+              ))}
           </div>
         </div>
       </section>
