@@ -1,6 +1,6 @@
 import { Zap, LucideIcon } from "lucide-react"
 import GoogleLogo from "@/assets/icons/google-logo.png"
-import MetaLogo from "@/assets/icons/meta-logo.png"
+import FacebookLogo from "@/assets/icons/facebook-logo.png"
 import TikTokLogo from "@/assets/icons/tiktok-logo.png"
 import SnapchatLogo from "@/assets/icons/snapchat-logo.png"
 import LinkedInLogo from "@/assets/icons/linkedin-logo.png"
@@ -22,7 +22,7 @@ const PlatformBanner = () => {
       color: "#4285F4"
     },
     { 
-      iconSrc: MetaLogo, 
+      iconSrc: FacebookLogo, 
       name: "Meta", 
       color: "#1877F2"
     },
@@ -70,14 +70,14 @@ const PlatformBanner = () => {
                 key={index}
                 className="flex flex-col items-center group cursor-pointer"
               >
-                <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center mb-2 group-hover:bg-white/20 transition-all duration-300 group-hover:scale-110 border border-white/20">
+                <div className="w-16 h-16 rounded-full bg-gray-800/80 backdrop-blur-sm flex items-center justify-center mb-2 group-hover:bg-gray-700/80 transition-all duration-300 group-hover:scale-110 border border-gray-600/30">
                   {IconComponent ? (
                     <IconComponent className="w-8 h-8 text-primary group-hover:text-primary/80" />
                   ) : (
                     <img 
                       src={platform.iconSrc} 
                       alt={`${platform.name} logo`}
-                      className="w-10 h-10 object-contain"
+                      className="w-12 h-12 object-contain rounded-full"
                     />
                   )}
                 </div>
