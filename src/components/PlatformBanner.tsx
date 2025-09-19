@@ -1,15 +1,7 @@
-import { Zap, LucideIcon } from "lucide-react"
-import GoogleAdsLogo from "@/assets/icons/google-ads-logo.png"
-import FacebookLogo from "@/assets/icons/facebook-original.png"
-import TikTokLogo from "@/assets/icons/tiktok-logo.png"
-import SnapchatLogo from "@/assets/icons/snapchat-logo.png"
-import LinkedInLogo from "@/assets/icons/linkedin-logo.png"
-import PinterestLogo from "@/assets/icons/pinterest-logo.png"
-import TwitterLogo from "@/assets/icons/twitter-logo.png"
+import { Zap, Target, Users, TrendingUp, Shield, BarChart3, Globe, Video, Camera, Smartphone } from "lucide-react"
 
 interface PlatformItem {
-  iconSrc?: string
-  iconComponent?: LucideIcon
+  iconComponent: any
   name: string
   color: string
 }
@@ -17,37 +9,37 @@ interface PlatformItem {
 const PlatformBanner = () => {
   const platforms: PlatformItem[] = [
     { 
-      iconSrc: GoogleAdsLogo, 
+      iconComponent: Target, 
       name: "Google Ads", 
       color: "#4285F4"
     },
     { 
-      iconSrc: FacebookLogo, 
+      iconComponent: Users, 
       name: "Meta", 
       color: "#1877F2"
     },
     { 
-      iconSrc: TikTokLogo, 
+      iconComponent: Video, 
       name: "TikTok", 
       color: "#000000"
     },
     { 
-      iconSrc: SnapchatLogo, 
+      iconComponent: Camera, 
       name: "Snapchat", 
       color: "#FFFC00"
     },
     { 
-      iconSrc: LinkedInLogo, 
+      iconComponent: Smartphone, 
       name: "LinkedIn", 
       color: "#0A66C2"
     },
     { 
-      iconSrc: PinterestLogo, 
+      iconComponent: Shield, 
       name: "Pinterest", 
       color: "#E60023"
     },
     { 
-      iconSrc: TwitterLogo, 
+      iconComponent: BarChart3, 
       name: "Twitter", 
       color: "#000000"
     },
@@ -71,15 +63,7 @@ const PlatformBanner = () => {
                 className="flex flex-col items-center group cursor-pointer"
               >
                 <div className="w-16 h-16 rounded-full bg-gray-800/80 backdrop-blur-sm flex items-center justify-center mb-2 group-hover:bg-gray-700/80 transition-all duration-300 group-hover:scale-110 border border-gray-600/30">
-                  {IconComponent ? (
-                    <IconComponent className="w-8 h-8 text-primary group-hover:text-primary/80" />
-                  ) : (
-                    <img 
-                      src={platform.iconSrc} 
-                      alt={`${platform.name} logo`}
-                      className="w-12 h-12 object-contain rounded-full"
-                    />
-                  )}
+                  <IconComponent className="w-8 h-8 text-primary group-hover:text-primary/80" />
                 </div>
                 <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">
                   {platform.name}
