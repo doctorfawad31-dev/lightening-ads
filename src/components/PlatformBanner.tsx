@@ -13,10 +13,10 @@ const PlatformBanner = () => {
   ]
 
   return (
-    <section className="pt-24 pb-8 bg-background">
+    <section className="pt-20 pb-2 bg-background">
       <div className="container mx-auto px-6">
         {/* Platform Icons */}
-        <div className="flex flex-wrap justify-center items-center gap-6 mb-6">
+        <div className="flex flex-wrap justify-center items-center gap-6">
           {platforms.map((platform, index) => (
             <div 
               key={index}
@@ -32,11 +32,8 @@ const PlatformBanner = () => {
           ))}
         </div>
 
-        {/* Main Content */}
-        <div className="text-center max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
-            Agency Account Solutions
-          </h2>
+        {/* Description */}
+        <div className="text-center max-w-4xl mx-auto mt-6">
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
             Access premium, aged advertising accounts across Google, Meta, TikTok, 
             Snapchat, LinkedIn, and 40+ platforms. No more account bans or spending 
