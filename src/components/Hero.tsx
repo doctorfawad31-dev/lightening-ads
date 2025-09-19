@@ -5,8 +5,8 @@ import { useState, useEffect } from "react"
 
 const Hero = () => {
   const titles = [
-    "Agency Account Solutions",
-    "Premium Marketing Accounts", 
+    "Premium Agency Ad Accounts",
+    "High-Trust Marketing Solutions", 
     "Unlimited Spending Power"
   ]
   
@@ -20,7 +20,7 @@ const Hero = () => {
     return () => clearInterval(interval)
   }, [])
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
@@ -44,8 +44,8 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Skip the restrictions and scale immediately with our aged, warmed marketing 
-            agency accounts featuring unlimited spending limits.
+            Access aged, warmed marketing agency accounts with unlimited spending limits across all major platforms. 
+            Skip the restrictions and scale immediately.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
