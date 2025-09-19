@@ -1,6 +1,6 @@
 import { Zap, LucideIcon } from "lucide-react"
-import GoogleLogo from "@/assets/icons/google-logo.png"
-import FacebookLogo from "@/assets/icons/facebook-logo.png"
+import GoogleAdsLogo from "@/assets/icons/google-ads-logo.png"
+import FacebookLogo from "@/assets/icons/facebook-original.png"
 import TikTokLogo from "@/assets/icons/tiktok-logo.png"
 import SnapchatLogo from "@/assets/icons/snapchat-logo.png"
 import LinkedInLogo from "@/assets/icons/linkedin-logo.png"
@@ -17,8 +17,8 @@ interface PlatformItem {
 const PlatformBanner = () => {
   const platforms: PlatformItem[] = [
     { 
-      iconSrc: GoogleLogo, 
-      name: "Google", 
+      iconSrc: GoogleAdsLogo, 
+      name: "Google Ads", 
       color: "#4285F4"
     },
     { 
