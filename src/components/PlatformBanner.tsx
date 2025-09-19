@@ -1,69 +1,60 @@
-import { Zap } from "lucide-react"
-import GoogleAdsOfficial from "@/assets/icons/google-ads-official.png"
-import MetaOfficial from "@/assets/icons/meta-official.png"
-import TikTokOfficial from "@/assets/icons/tiktok-official.png"
-import SnapchatOfficial from "@/assets/icons/snapchat-official.png"
-import LinkedInOfficial from "@/assets/icons/linkedin-official.png"
-import PinterestOfficial from "@/assets/icons/pinterest-official.png"
-import TwitterXOfficial from "@/assets/icons/twitter-x-official.png"
+import { Zap, LucideIcon } from "lucide-react"
+import GoogleAdsLogo from "@/assets/icons/google-ads-logo.png"
+import FacebookLogo from "@/assets/icons/facebook-original.png"
+import TikTokLogo from "@/assets/icons/tiktok-logo.png"
+import SnapchatLogo from "@/assets/icons/snapchat-logo.png"
+import LinkedInLogo from "@/assets/icons/linkedin-logo.png"
+import PinterestLogo from "@/assets/icons/pinterest-logo.png"
+import TwitterLogo from "@/assets/icons/twitter-logo.png"
 
 interface PlatformItem {
   iconSrc?: string
-  iconComponent?: any
+  iconComponent?: LucideIcon
   name: string
   color: string
-  isLucide?: boolean
 }
 
 const PlatformBanner = () => {
   const platforms: PlatformItem[] = [
     { 
-      iconSrc: GoogleAdsOfficial, 
+      iconSrc: GoogleAdsLogo, 
       name: "Google Ads", 
-      color: "#4285F4",
-      isLucide: false
+      color: "#4285F4"
     },
     { 
-      iconSrc: MetaOfficial, 
+      iconSrc: FacebookLogo, 
       name: "Meta", 
-      color: "#1877F2",
-      isLucide: false
+      color: "#1877F2"
     },
     { 
-      iconSrc: TikTokOfficial, 
+      iconSrc: TikTokLogo, 
       name: "TikTok", 
-      color: "#000000",
-      isLucide: false
+      color: "#000000"
     },
     { 
-      iconSrc: SnapchatOfficial, 
+      iconSrc: SnapchatLogo, 
       name: "Snapchat", 
-      color: "#FFFC00",
-      isLucide: false
+      color: "#FFFC00"
     },
     { 
-      iconSrc: LinkedInOfficial, 
+      iconSrc: LinkedInLogo, 
       name: "LinkedIn", 
-      color: "#0A66C2",
-      isLucide: false
+      color: "#0A66C2"
     },
     { 
-      iconSrc: PinterestOfficial, 
+      iconSrc: PinterestLogo, 
       name: "Pinterest", 
-      color: "#E60023",
-      isLucide: false
+      color: "#E60023"
     },
     { 
-      iconSrc: TwitterXOfficial, 
+      iconSrc: TwitterLogo, 
       name: "Twitter", 
-      color: "#000000",
-      isLucide: false
+      color: "#000000"
     },
     { 
       iconComponent: Zap, 
       name: "More", 
-      color: "hsl(var(--primary))",
-      isLucide: true
+      color: "hsl(var(--primary))"
     }
   ]
 
@@ -80,13 +71,13 @@ const PlatformBanner = () => {
                 className="flex flex-col items-center group cursor-pointer"
               >
                 <div className="w-16 h-16 rounded-full bg-gray-800/80 backdrop-blur-sm flex items-center justify-center mb-2 group-hover:bg-gray-700/80 transition-all duration-300 group-hover:scale-110 border border-gray-600/30">
-                  {platform.isLucide ? (
+                  {IconComponent ? (
                     <IconComponent className="w-8 h-8 text-primary group-hover:text-primary/80" />
                   ) : (
                     <img 
                       src={platform.iconSrc} 
                       alt={`${platform.name} logo`}
-                      className="w-10 h-10 object-contain"
+                      className="w-12 h-12 object-contain rounded-full"
                     />
                   )}
                 </div>

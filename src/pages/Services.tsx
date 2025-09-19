@@ -19,52 +19,46 @@ import {
 import platformsHero from "@/assets/platforms-hero.jpg"
 import agencyDashboard from "@/assets/agency-dashboard.jpg"
 import scalingSolutions from "@/assets/scaling-solutions.jpg"
-import GoogleAdsOfficial from "@/assets/icons/google-ads-official.png"
-import MetaOfficial from "@/assets/icons/meta-official.png"
-import TikTokOfficial from "@/assets/icons/tiktok-official.png"
-import SnapchatOfficial from "@/assets/icons/snapchat-official.png"
-import LinkedInOfficial from "@/assets/icons/linkedin-official.png"
-import TwitterXOfficial from "@/assets/icons/twitter-x-official.png"
 
 const Services = () => {
   const platformServices = [
     {
-      iconSrc: GoogleAdsOfficial,
+      icon: Globe,
       title: "Google Ads Agency Accounts",
       description: "Premium Google Ads accounts with unlimited spending limits and high trust scores.",
       features: ["Search Campaigns", "Display Network", "YouTube Advertising", "Shopping Campaigns"],
       badge: "Most Popular"
     },
     {
-      iconSrc: MetaOfficial,
+      icon: Users,
       title: "Meta (Facebook & Instagram)",
       description: "Aged Meta advertising accounts for Facebook and Instagram campaigns.",
       features: ["Facebook Ads", "Instagram Ads", "Reels Advertising", "Stories Promotion"],
       badge: ""
     },
     {
-      iconSrc: TikTokOfficial,
+      icon: Video,
       title: "TikTok for Business",
       description: "High-performance TikTok advertising accounts for reaching younger demographics.",
       features: ["In-Feed Ads", "Branded Effects", "TopView Campaigns", "Spark Ads"],
       badge: "Trending"
     },
     {
-      iconSrc: SnapchatOfficial,
+      icon: Camera,
       title: "Snapchat Ads",
       description: "Premium Snapchat advertising accounts for creative campaign formats.",
       features: ["Snap Ads", "Story Ads", "Collection Ads", "AR Lenses"],
       badge: ""
     },
     {
-      iconSrc: TwitterXOfficial,
+      icon: Target,
       title: "Twitter/X Advertising",
       description: "Professional Twitter advertising accounts for B2B and engagement campaigns.",
       features: ["Promoted Tweets", "Video Ads", "Conversation Ads", "Takeover Campaigns"],
       badge: ""
     },
     {
-      iconSrc: LinkedInOfficial,
+      icon: Smartphone,
       title: "LinkedIn Business",
       description: "Enterprise LinkedIn advertising accounts for professional targeting.",
       features: ["Sponsored Content", "Message Ads", "Dynamic Ads", "Lead Gen Forms"],
@@ -141,23 +135,25 @@ const Services = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {platformServices.map((service, index) => (
-              <Card key={index} className="relative overflow-hidden border-border/50 hover:border-primary/50 transition-all duration-300 group hover:shadow-electric">
-                {service.badge && (
-                  <Badge className="absolute top-4 right-4 bg-gradient-primary text-primary-foreground">
-                    {service.badge}
-                  </Badge>
-                )}
-                
-                <CardHeader>
-                  <div className="w-12 h-12 rounded-full bg-gray-800/80 flex items-center justify-center mb-4 group-hover:shadow-glow transition-all duration-300">
-                    <img src={service.iconSrc} alt={`${service.title} logo`} className="h-6 w-6 object-contain" />
-                  </div>
-                  <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
-                  <CardDescription className="text-muted-foreground">
-                    {service.description}
-                  </CardDescription>
-                </CardHeader>
+            {platformServices.map((service, index) => {
+              const IconComponent = service.icon
+              return (
+                <Card key={index} className="relative overflow-hidden border-border/50 hover:border-primary/50 transition-all duration-300 group hover:shadow-electric">
+                  {service.badge && (
+                    <Badge className="absolute top-4 right-4 bg-gradient-primary text-primary-foreground">
+                      {service.badge}
+                    </Badge>
+                  )}
+                  
+                  <CardHeader>
+                    <div className="p-3 bg-gradient-primary/10 rounded-lg w-fit mb-4 group-hover:shadow-glow transition-all duration-300">
+                      <IconComponent className="h-6 w-6 text-primary" />
+                    </div>
+                    <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
+                    <CardDescription className="text-muted-foreground">
+                      {service.description}
+                    </CardDescription>
+                  </CardHeader>
 
                   <CardContent>
                     <ul className="space-y-2 mb-6">
@@ -178,7 +174,8 @@ const Services = () => {
                     </Button>
                   </CardContent>
                 </Card>
-              ))}
+              )
+            })}
           </div>
         </div>
       </section>
