@@ -5,7 +5,7 @@ const Privacy = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="container mx-auto px-6 py-16 max-w-4xl">
+      <main className="container mx-auto px-6 pt-24 pb-16 max-w-4xl">
         <div className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
           
