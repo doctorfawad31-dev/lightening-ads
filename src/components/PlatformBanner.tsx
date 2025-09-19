@@ -13,17 +13,17 @@ const PlatformBanner = () => {
   ]
 
   return (
-    <section className="bg-card/50 backdrop-blur-sm border-b border-border/50 py-12">
+    <section className="bg-card/50 backdrop-blur-sm py-8">
       <div className="container mx-auto px-6">
         {/* Platform Icons */}
-        <div className="flex flex-wrap justify-center items-center gap-6 mb-8">
+        <div className="flex flex-wrap justify-center items-center gap-6 mb-6">
           {platforms.map((platform, index) => (
             <div 
               key={index}
               className="flex flex-col items-center group cursor-pointer"
             >
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-2 group-hover:bg-primary/20 transition-all duration-300 group-hover:scale-110">
-                <platform.icon className="w-6 h-6 text-primary group-hover:text-primary/80" />
+              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-2 group-hover:bg-primary/20 transition-all duration-300 group-hover:scale-110">
+                <platform.icon className="w-8 h-8 text-primary group-hover:text-primary/80" />
               </div>
               <span className="text-xs text-muted-foreground group-hover:text-foreground transition-colors">
                 {platform.name}
@@ -34,7 +34,7 @@ const PlatformBanner = () => {
 
         {/* Main Content */}
         <div className="text-center max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
             Agency Account Solutions
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
