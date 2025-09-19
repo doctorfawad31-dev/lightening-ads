@@ -1,11 +1,11 @@
 import { Zap, LucideIcon } from "lucide-react"
-import GoogleIcon from "@/assets/icons/google.svg"
-import MetaIcon from "@/assets/icons/meta.svg"
-import TikTokIcon from "@/assets/icons/tiktok.svg"
-import SnapchatIcon from "@/assets/icons/snapchat.svg"
-import LinkedInIcon from "@/assets/icons/linkedin.svg"
-import PinterestIcon from "@/assets/icons/pinterest.svg"
-import XIcon from "@/assets/icons/x.svg"
+import GoogleLogo from "@/assets/icons/google-logo.png"
+import MetaLogo from "@/assets/icons/meta-logo.png"
+import TikTokLogo from "@/assets/icons/tiktok-logo.png"
+import SnapchatLogo from "@/assets/icons/snapchat-logo.png"
+import LinkedInLogo from "@/assets/icons/linkedin-logo.png"
+import PinterestLogo from "@/assets/icons/pinterest-logo.png"
+import TwitterLogo from "@/assets/icons/twitter-logo.png"
 
 interface PlatformItem {
   iconSrc?: string
@@ -17,37 +17,37 @@ interface PlatformItem {
 const PlatformBanner = () => {
   const platforms: PlatformItem[] = [
     { 
-      iconSrc: GoogleIcon, 
+      iconSrc: GoogleLogo, 
       name: "Google", 
       color: "#4285F4"
     },
     { 
-      iconSrc: MetaIcon, 
+      iconSrc: MetaLogo, 
       name: "Meta", 
       color: "#1877F2"
     },
     { 
-      iconSrc: TikTokIcon, 
+      iconSrc: TikTokLogo, 
       name: "TikTok", 
       color: "#000000"
     },
     { 
-      iconSrc: SnapchatIcon, 
+      iconSrc: SnapchatLogo, 
       name: "Snapchat", 
       color: "#FFFC00"
     },
     { 
-      iconSrc: LinkedInIcon, 
+      iconSrc: LinkedInLogo, 
       name: "LinkedIn", 
       color: "#0A66C2"
     },
     { 
-      iconSrc: PinterestIcon, 
+      iconSrc: PinterestLogo, 
       name: "Pinterest", 
       color: "#E60023"
     },
     { 
-      iconSrc: XIcon, 
+      iconSrc: TwitterLogo, 
       name: "Twitter", 
       color: "#000000"
     },
@@ -70,15 +70,14 @@ const PlatformBanner = () => {
                 key={index}
                 className="flex flex-col items-center group cursor-pointer"
               >
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-2 group-hover:bg-primary/20 transition-all duration-300 group-hover:scale-110">
+                <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center mb-2 group-hover:bg-white/20 transition-all duration-300 group-hover:scale-110 border border-white/20">
                   {IconComponent ? (
                     <IconComponent className="w-8 h-8 text-primary group-hover:text-primary/80" />
                   ) : (
                     <img 
                       src={platform.iconSrc} 
                       alt={`${platform.name} logo`}
-                      className="w-8 h-8 object-contain"
-                      style={{ filter: 'brightness(0) saturate(100%) invert(39%) sepia(79%) saturate(4851%) hue-rotate(212deg) brightness(95%) contrast(101%)' }}
+                      className="w-10 h-10 object-contain"
                     />
                   )}
                 </div>
