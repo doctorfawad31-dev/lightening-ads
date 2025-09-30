@@ -1,90 +1,76 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play } from "lucide-react"
 import heroImage from "@/assets/hero-phone-ads.jpg"
-import { useState, useEffect } from "react"
 
 const Hero = () => {
-  const titles = [
-    "High-Trust Marketing Solutions"
-  ]
-  
-  const [currentTitleIndex, setCurrentTitleIndex] = useState(0)
-  
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTitleIndex((prev) => (prev + 1) % titles.length)
-    }, 4000) // Change every 4 seconds
-    
-    return () => clearInterval(interval)
-  }, [])
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-[600px] flex items-center justify-center overflow-hidden mt-20">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
           src={heroImage} 
-          alt="Lightning Ads Hero" 
-          className="w-full h-full object-cover opacity-20"
+          alt="High-Trust Marketing Solutions" 
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-hero" />
+        <div className="absolute inset-0 bg-background/40" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+      <div className="relative z-10 container mx-auto px-6">
+        <div className="max-w-xl text-left">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               High-Trust Marketing
             </span>{" "}
             <span className="text-foreground">Solutions</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-sm md:text-base text-foreground/80 mb-6 max-w-lg">
             Access aged, warmed marketing agency accounts with unlimited spending limits across all major platforms. Skip the restrictions and scale immediately.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-3 mb-8">
             <Button 
               size="lg" 
-              className="bg-gradient-primary hover:shadow-electric transition-all duration-300 px-6 py-6 text-base group"
+              className="bg-gradient-primary hover:shadow-electric transition-all duration-300 px-6 h-12 text-sm font-medium group"
             >
               Get Agency Accounts
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             
             <Button 
               size="lg" 
               variant="outline" 
-              className="px-6 py-6 text-base border-foreground/20 hover:border-foreground/40 hover:bg-foreground/5 transition-all duration-300 group"
+              className="px-6 h-12 text-sm font-medium border-foreground/30 hover:border-foreground/50 hover:bg-foreground/5 transition-all duration-300 group"
             >
-              <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform fill-current" />
+              <Play className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform fill-current" />
               Watch Demo
             </Button>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-border/30">
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+          <div className="flex gap-8">
+            <div>
+              <div className="text-2xl md:text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent">
                 500+
               </div>
-              <div className="text-sm text-muted-foreground mt-2">
+              <div className="text-xs text-muted-foreground mt-1">
                 Active Campaigns
               </div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+            <div>
+              <div className="text-2xl md:text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent">
                 $10M+
               </div>
-              <div className="text-sm text-muted-foreground mt-2">
+              <div className="text-xs text-muted-foreground mt-1">
                 Ad Spend Managed
               </div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+            <div>
+              <div className="text-2xl md:text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent">
                 98%
               </div>
-              <div className="text-sm text-muted-foreground mt-2">
+              <div className="text-xs text-muted-foreground mt-1">
                 Client Satisfaction
               </div>
             </div>
