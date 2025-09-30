@@ -87,14 +87,14 @@ const PlatformBanner = () => {
                   key={index}
                   className="flex flex-col items-center group cursor-pointer"
                 >
-                  <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-secondary/50 backdrop-blur-sm flex items-center justify-center mb-3 group-hover:bg-secondary/70 transition-all duration-300 group-hover:scale-110 border border-border/30">
+                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-secondary/50 backdrop-blur-sm flex items-center justify-center mb-3 group-hover:bg-secondary/70 transition-all duration-300 group-hover:scale-110 border border-border/30">
                     {IconComponent ? (
-                      <IconComponent className="w-10 h-10 md:w-12 md:h-12 text-primary group-hover:text-primary/80" />
+                      <IconComponent className="w-8 h-8 md:w-10 md:h-10 text-primary group-hover:text-primary/80" />
                     ) : (
                       <img 
                         src={platform.iconSrc} 
                         alt={`${platform.name} logo`}
-                        className="w-12 h-12 md:w-14 md:h-14 object-contain rounded-full"
+                        className="w-10 h-10 md:w-12 md:h-12 object-contain rounded-full"
                       />
                     )}
                   </div>
@@ -115,14 +115,14 @@ const PlatformBanner = () => {
                   key={index + 4}
                   className="flex flex-col items-center group cursor-pointer"
                 >
-                  <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-secondary/50 backdrop-blur-sm flex items-center justify-center mb-3 group-hover:bg-secondary/70 transition-all duration-300 group-hover:scale-110 border border-border/30">
+                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-secondary/50 backdrop-blur-sm flex items-center justify-center mb-3 group-hover:bg-secondary/70 transition-all duration-300 group-hover:scale-110 border border-border/30">
                     {IconComponent ? (
-                      <IconComponent className="w-10 h-10 md:w-12 md:h-12 text-primary group-hover:text-primary/80" />
+                      <IconComponent className="w-8 h-8 md:w-10 md:h-10 text-primary group-hover:text-primary/80" />
                     ) : (
                       <img 
                         src={platform.iconSrc} 
                         alt={`${platform.name} logo`}
-                        className="w-12 h-12 md:w-14 md:h-14 object-contain rounded-full"
+                        className="w-10 h-10 md:w-12 md:h-12 object-contain rounded-full"
                       />
                     )}
                   </div>
