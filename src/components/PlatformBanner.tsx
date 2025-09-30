@@ -78,7 +78,7 @@ const PlatformBanner = () => {
 
         {/* Platform Icons Grid */}
         <div className="flex flex-col items-center gap-8 max-w-2xl mx-auto">
-          {/* Top Row */}
+          {/* Top Row - Large Icons */}
           <div className="flex justify-center items-center gap-12">
             {platforms.slice(0, 4).map((platform, index) => {
               const IconComponent = platform.iconComponent
@@ -87,14 +87,14 @@ const PlatformBanner = () => {
                   key={index}
                   className="flex flex-col items-center group cursor-pointer"
                 >
-                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-secondary/50 backdrop-blur-sm flex items-center justify-center mb-3 group-hover:bg-secondary/70 transition-all duration-300 group-hover:scale-110 border border-border/30">
+                  <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-secondary/50 backdrop-blur-sm flex items-center justify-center mb-3 group-hover:bg-secondary/70 transition-all duration-300 group-hover:scale-110 border border-border/30">
                     {IconComponent ? (
-                      <IconComponent className="w-8 h-8 md:w-10 md:h-10 text-primary group-hover:text-primary/80" />
+                      <IconComponent className="w-12 h-12 md:w-16 md:h-16 text-primary group-hover:text-primary/80" />
                     ) : (
                       <img 
                         src={platform.iconSrc} 
                         alt={`${platform.name} logo`}
-                        className="w-10 h-10 md:w-12 md:h-12 object-contain rounded-full"
+                        className="w-14 h-14 md:w-20 md:h-20 object-contain rounded-full"
                       />
                     )}
                   </div>
@@ -106,7 +106,7 @@ const PlatformBanner = () => {
             })}
           </div>
 
-          {/* Bottom Row */}
+          {/* Bottom Row - Small Icons */}
           <div className="flex justify-center items-center gap-12">
             {platforms.slice(4, 8).map((platform, index) => {
               const IconComponent = platform.iconComponent
@@ -122,7 +122,7 @@ const PlatformBanner = () => {
                       <img 
                         src={platform.iconSrc} 
                         alt={`${platform.name} logo`}
-                        className="w-10 h-10 md:w-12 md:h-12 object-contain rounded-full"
+                        className="w-8 h-8 md:w-10 md:h-10 object-contain rounded-full"
                       />
                     )}
                   </div>
