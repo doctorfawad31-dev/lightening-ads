@@ -1,13 +1,11 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play } from "lucide-react"
-import heroImage from "@/assets/lightning-hero.jpg"
+import heroImage from "@/assets/hero-phone-ads.jpg"
 import { useState, useEffect } from "react"
 
 const Hero = () => {
   const titles = [
-    "Premium Agency Ad Accounts",
-    "High-Trust Marketing Solutions", 
-    "Unlimited Spending Power"
+    "High-Trust Marketing Solutions"
   ]
   
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0)
@@ -35,12 +33,13 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span 
-              key={currentTitleIndex}
-              className="bg-gradient-primary bg-clip-text text-transparent animate-fade-in-out block"
-            >
-              {titles[currentTitleIndex]}
-            </span>
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              High-Trust
+            </span>{" "}
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              Marketing
+            </span>{" "}
+            <span className="text-foreground">Solutions</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">

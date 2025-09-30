@@ -33,7 +33,7 @@ const Header = () => {
               Contact
             </a>
             <Button className="bg-gradient-primary hover:shadow-electric transition-all duration-300">
-              Get Started
+              Get Account
             </Button>
           </div>
 
@@ -63,7 +63,7 @@ const Header = () => {
                 Contact
               </a>
               <Button className="bg-gradient-primary hover:shadow-electric transition-all duration-300 w-full">
-                Get Started
+                Get Account
               </Button>
             </div>
           </div>
