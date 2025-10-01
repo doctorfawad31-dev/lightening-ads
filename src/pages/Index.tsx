@@ -5,6 +5,7 @@ import Benefits from "@/components/Benefits"
 import Testimonials from "@/components/Testimonials"
 import ReviewPlatforms from "@/components/ReviewPlatforms"
 import CTA from "@/components/CTA"
+import ConsultationSection from "@/components/ConsultationSection"
 import Footer from "@/components/Footer"
 import PlatformBanner from "@/components/PlatformBanner"
 
@@ -20,6 +21,7 @@ const Index = () => {
         <Testimonials />
         <ReviewPlatforms />
         <CTA />
+        <ConsultationSection />
       </main>
       <Footer />
     </div>
