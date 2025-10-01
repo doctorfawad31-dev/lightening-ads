@@ -26,9 +26,9 @@ const ReviewPlatforms = () => {
     <section className="py-16 bg-background">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          <span className="text-lightning-yellow">We are loved all over the</span>
+          <span className="bg-gradient-primary bg-clip-text text-transparent">We are loved all over the</span>
           <br />
-          <span className="text-muted-foreground">internet by many!</span>
+          <span className="text-foreground">internet by many!</span>
         </h2>
         
         <div className="flex justify-center items-center gap-8 md:gap-12 flex-wrap">

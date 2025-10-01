@@ -44,22 +44,24 @@ const ConsultationSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            <span className="text-lightning-yellow">Got a Query? Schedule a Free</span>
+            <span className="bg-gradient-primary bg-clip-text text-transparent">Got a Query? Schedule a Free</span>
             <br />
-            <span className="text-lightning-yellow">Consultation Session</span>{" "}
-            <span className="text-muted-foreground">with Our Ad Expert</span>
+            <span className="bg-gradient-primary bg-clip-text text-transparent">Consultation Session</span>{" "}
+            <span className="text-foreground">with Our Ad Expert</span>
           </h2>
           <p className="text-foreground mb-4">Schedule a call:</p>
           <Button 
-            className="bg-gradient-to-r from-lightning-yellow to-lightning-yellow hover:opacity-90 text-background font-semibold"
+            className="bg-gradient-primary hover:shadow-electric transition-all duration-300 group"
           >
-            Get Started <ArrowRight className="ml-2 h-4 w-4" />
+            Get Started <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
 
         <div className="max-w-2xl mx-auto mt-12">
           <div className="bg-card/30 backdrop-blur-sm rounded-lg p-8 border border-border/30">
-            <h3 className="text-2xl font-bold text-lightning-yellow mb-6">Contact us</h3>
+            <h3 className="text-2xl font-bold mb-6">
+              <span className="bg-gradient-primary bg-clip-text text-transparent">Contact us</span>
+            </h3>
             
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -154,9 +156,9 @@ const ConsultationSection = () => {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-lightning-yellow via-lightning-yellow to-primary hover:opacity-90 text-background font-semibold text-lg py-6"
+                className="w-full bg-gradient-primary hover:shadow-electric transition-all duration-300 text-lg py-6 group"
               >
-                Submit <ArrowRight className="ml-2 h-5 w-5" />
+                Submit <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </form>
           </div>
