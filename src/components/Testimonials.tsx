@@ -1,5 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Star } from "lucide-react"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
 
 const Testimonials = () => {
   const testimonials = [
@@ -42,61 +48,64 @@ const Testimonials = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            What Our 
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              {" "}Clients Say
-            </span>
+            <span className="text-lightning-yellow">What Our</span>
+            <span className="text-foreground"> Clients Say</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Don't just take our word for it. Here's what industry leaders say about working with Lightning Ads.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-electric group">
-              <CardContent className="p-8">
-                {/* Rating */}
-                <div className="flex items-center space-x-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-lightning-yellow fill-lightning-yellow" />
-                  ))}
-                </div>
-
-                {/* Content */}
-                <p className="text-muted-foreground mb-6 text-lg italic">
-                  "{testimonial.content}"
-                </p>
-
-                {/* Author */}
-                <div className="flex items-center space-x-4">
-                  <img 
-                    src={testimonial.image} 
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover border-2 border-primary/30"
-                  />
-                  <div>
-                    <div className="font-semibold text-foreground">{testimonial.name}</div>
-                    <div className="text-sm text-muted-foreground">
-                      {testimonial.role} • {testimonial.company}
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          plugins={[
+            Autoplay({
+              delay: 3000,
+              stopOnInteraction: false,
+            }),
+          ]}
+          className="w-full"
+        >
+          <CarouselContent className="-ml-4">
+            {testimonials.map((testimonial, index) => (
+              <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                <Card className="border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-electric group h-full">
+                  <CardContent className="p-8">
+                    {/* Rating */}
+                    <div className="flex items-center space-x-1 mb-4">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="h-5 w-5 text-lightning-yellow fill-lightning-yellow" />
+                      ))}
                     </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
 
-        {/* Trust Badges */}
-        <div className="mt-16 pt-8 border-t border-border/30">
-          <p className="text-center text-sm text-muted-foreground mb-8">Trusted by 500+ companies worldwide</p>
-          <div className="flex justify-center items-center space-x-12 opacity-60">
-            <div className="text-2xl font-bold">TechFlow</div>
-            <div className="text-2xl font-bold">GrowthLab</div>
-            <div className="text-2xl font-bold">Digital Dynamics</div>
-            <div className="text-2xl font-bold">StartupBoost</div>
-          </div>
-        </div>
+                    {/* Content */}
+                    <p className="text-muted-foreground mb-6 text-lg italic">
+                      "{testimonial.content}"
+                    </p>
+
+                    {/* Author */}
+                    <div className="flex items-center space-x-4">
+                      <img 
+                        src={testimonial.image} 
+                        alt={testimonial.name}
+                        className="w-12 h-12 rounded-full object-cover border-2 border-primary/30"
+                      />
+                      <div>
+                        <div className="font-semibold text-foreground">{testimonial.name}</div>
+                        <div className="text-sm text-muted-foreground">
+                          {testimonial.role} • {testimonial.company}
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
       </div>
     </section>
   )
