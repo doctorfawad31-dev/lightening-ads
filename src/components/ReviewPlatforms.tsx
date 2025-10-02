@@ -1,27 +1,4 @@
 const ReviewPlatforms = () => {
-  const platforms = [
-    {
-      name: "Hostlator",
-      icon: "★",
-      color: "#3B82F6"
-    },
-    {
-      name: "Trustpilot",
-      icon: "★",
-      color: "#00B67A"
-    },
-    {
-      name: "REVIEWS.io",
-      icon: "○",
-      color: "#FFFFFF"
-    },
-    {
-      name: "reddit",
-      icon: "◉",
-      color: "#FF4500"
-    }
-  ]
-
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-6">
@@ -31,18 +8,12 @@ const ReviewPlatforms = () => {
           <span className="text-foreground">internet by many!</span>
         </h2>
         
-        <div className="flex justify-center items-center gap-8 md:gap-12 flex-wrap">
-          {platforms.map((platform, index) => (
-            <div 
-              key={index}
-              className="flex items-center gap-2 text-muted-foreground hover:opacity-80 transition-opacity"
-            >
-              <span style={{ color: platform.color }} className="text-2xl font-bold">
-                {platform.icon}
-              </span>
-              <span className="text-lg font-medium">{platform.name}</span>
-            </div>
-          ))}
+        <div className="flex justify-center items-center">
+          <img 
+            src="https://res.cloudinary.com/djecn7fxz/image/upload/v1759390429/Group_1321317133_1_dlgwiz.png" 
+            alt="Review platforms - Hostlator, Trustpilot, REVIEWS.io, and Reddit"
+            className="max-w-full h-auto"
+          />
         </div>
       </div>
     </section>
