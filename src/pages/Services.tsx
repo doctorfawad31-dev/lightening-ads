@@ -116,7 +116,7 @@ const Services = () => {
         <Header />
         
         {/* Hero Section */}
-        <section className="relative pt-32 pb-16 overflow-hidden mt-8">
+        <section className="relative pt-40 pb-32 overflow-hidden mt-8 min-h-[600px] md:min-h-[700px]">
           <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${servicesHero})` }}
