@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play } from "lucide-react"
-import heroImage from "@/assets/hero-marketing-concept.png"
+import heroImage from "@/assets/hero-main.png"
 
 const Hero = () => {
   return (
@@ -12,7 +12,6 @@ const Hero = () => {
           alt="High-Trust Marketing Solutions" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-background/40" />
       </div>
 
       {/* Content */}
