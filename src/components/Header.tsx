@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
 import { useState } from "react"
+import { NavLink } from "react-router-dom"
 import logoImage from "@/assets/light-ads-logo.png"
 
 const Header = () => {
@@ -20,18 +21,34 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-muted-foreground hover:bg-gradient-primary hover:bg-clip-text hover:text-transparent [&.active]:bg-gradient-primary [&.active]:bg-clip-text [&.active]:text-transparent transition-all">
+            <NavLink to="/" className={({ isActive }) => 
+              isActive 
+                ? "bg-gradient-primary bg-clip-text text-transparent" 
+                : "text-muted-foreground hover:bg-gradient-primary hover:bg-clip-text hover:text-transparent transition-all"
+            }>
               Home
-            </a>
-            <a href="/services" className="text-muted-foreground hover:bg-gradient-primary hover:bg-clip-text hover:text-transparent [&.active]:bg-gradient-primary [&.active]:bg-clip-text [&.active]:text-transparent transition-all">
+            </NavLink>
+            <NavLink to="/services" className={({ isActive }) => 
+              isActive 
+                ? "bg-gradient-primary bg-clip-text text-transparent" 
+                : "text-muted-foreground hover:bg-gradient-primary hover:bg-clip-text hover:text-transparent transition-all"
+            }>
               Services
-            </a>
-            <a href="/about" className="text-muted-foreground hover:bg-gradient-primary hover:bg-clip-text hover:text-transparent [&.active]:bg-gradient-primary [&.active]:bg-clip-text [&.active]:text-transparent transition-all">
+            </NavLink>
+            <NavLink to="/about" className={({ isActive }) => 
+              isActive 
+                ? "bg-gradient-primary bg-clip-text text-transparent" 
+                : "text-muted-foreground hover:bg-gradient-primary hover:bg-clip-text hover:text-transparent transition-all"
+            }>
               About
-            </a>
-            <a href="/contact" className="text-muted-foreground hover:bg-gradient-primary hover:bg-clip-text hover:text-transparent [&.active]:bg-gradient-primary [&.active]:bg-clip-text [&.active]:text-transparent transition-all">
+            </NavLink>
+            <NavLink to="/contact" className={({ isActive }) => 
+              isActive 
+                ? "bg-gradient-primary bg-clip-text text-transparent" 
+                : "text-muted-foreground hover:bg-gradient-primary hover:bg-clip-text hover:text-transparent transition-all"
+            }>
               Contact
-            </a>
+            </NavLink>
             <Button className="bg-gradient-primary hover:shadow-electric transition-all duration-300">
               Get Account
             </Button>
@@ -50,18 +67,34 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border pt-4">
             <div className="flex flex-col space-y-4">
-              <a href="/" className="text-muted-foreground hover:bg-gradient-primary hover:bg-clip-text hover:text-transparent [&.active]:bg-gradient-primary [&.active]:bg-clip-text [&.active]:text-transparent transition-all">
+              <NavLink to="/" className={({ isActive }) => 
+                isActive 
+                  ? "bg-gradient-primary bg-clip-text text-transparent" 
+                  : "text-muted-foreground hover:bg-gradient-primary hover:bg-clip-text hover:text-transparent transition-all"
+              }>
                 Home
-              </a>
-              <a href="/services" className="text-muted-foreground hover:bg-gradient-primary hover:bg-clip-text hover:text-transparent [&.active]:bg-gradient-primary [&.active]:bg-clip-text [&.active]:text-transparent transition-all">
+              </NavLink>
+              <NavLink to="/services" className={({ isActive }) => 
+                isActive 
+                  ? "bg-gradient-primary bg-clip-text text-transparent" 
+                  : "text-muted-foreground hover:bg-gradient-primary hover:bg-clip-text hover:text-transparent transition-all"
+              }>
                 Services
-              </a>
-              <a href="/about" className="text-muted-foreground hover:bg-gradient-primary hover:bg-clip-text hover:text-transparent [&.active]:bg-gradient-primary [&.active]:bg-clip-text [&.active]:text-transparent transition-all">
+              </NavLink>
+              <NavLink to="/about" className={({ isActive }) => 
+                isActive 
+                  ? "bg-gradient-primary bg-clip-text text-transparent" 
+                  : "text-muted-foreground hover:bg-gradient-primary hover:bg-clip-text hover:text-transparent transition-all"
+              }>
                 About
-              </a>
-              <a href="/contact" className="text-muted-foreground hover:bg-gradient-primary hover:bg-clip-text hover:text-transparent [&.active]:bg-gradient-primary [&.active]:bg-clip-text [&.active]:text-transparent transition-all">
+              </NavLink>
+              <NavLink to="/contact" className={({ isActive }) => 
+                isActive 
+                  ? "bg-gradient-primary bg-clip-text text-transparent" 
+                  : "text-muted-foreground hover:bg-gradient-primary hover:bg-clip-text hover:text-transparent transition-all"
+              }>
                 Contact
-              </a>
+              </NavLink>
               <Button className="bg-gradient-primary hover:shadow-electric transition-all duration-300 w-full">
                 Get Account
               </Button>
