@@ -246,13 +246,6 @@ const Services = () => {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
-              <img 
-                src={agencyDashboard} 
-                alt="Agency Dashboard" 
-                className="rounded-lg shadow-2xl"
-              />
-            </div>
-            <div>
               <h3 className="text-3xl font-bold mb-6">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                   Advanced Analytics & Reporting
@@ -279,10 +272,24 @@ const Services = () => {
                 View Demo
               </Button>
             </div>
+            <div>
+              <img 
+                src={agencyDashboard} 
+                alt="Agency Dashboard" 
+                className="rounded-lg shadow-2xl"
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
+            <div>
+              <img 
+                src={scalingSolutions} 
+                alt="Scaling Solutions" 
+                className="rounded-lg shadow-2xl"
+              />
+            </div>
+            <div>
               <h3 className="text-3xl font-bold mb-6">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                   Scaling Solutions
@@ -308,13 +315,6 @@ const Services = () => {
               <Button className="bg-gradient-primary hover:shadow-electric transition-all duration-300">
                 Learn More
               </Button>
-            </div>
-            <div className="order-1 lg:order-2">
-              <img 
-                src={scalingSolutions} 
-                alt="Scaling Solutions" 
-                className="rounded-lg shadow-2xl"
-              />
             </div>
           </div>
         </div>
