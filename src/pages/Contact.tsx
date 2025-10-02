@@ -76,7 +76,7 @@ const Contact = () => {
                 Contact Us
               </span>
             </h1>
-            <p className="text-sm md:text-base text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-xs md:text-sm text-muted-foreground mb-8 max-w-2xl mx-auto">
               Ready to scale your advertising campaigns? Get in touch with our team of experts and start your journey to unlimited ad spend today.
             </p>
           </div>
@@ -129,43 +129,43 @@ const Contact = () => {
                     Contact us
                   </span>
                 </CardTitle>
-                <CardDescription>
+                <CardDescription className="text-xs">
                   Fill out the form below and we'll get back to you within 24 hours.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="firstName">Full Name*</Label>
-                    <Input id="firstName" placeholder="Name" />
+                    <Label htmlFor="firstName" className="text-xs">Full Name*</Label>
+                    <Input id="firstName" placeholder="John" />
                   </div>
                   <div>
-                    <Label htmlFor="lastName">Last Name</Label>
-                    <Input id="lastName" placeholder="Last Name" />
+                    <Label htmlFor="lastName" className="text-xs">Last Name</Label>
+                    <Input id="lastName" placeholder="Doe" />
                   </div>
                 </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="email">Email*</Label>
-                    <Input id="email" type="email" placeholder="John@Example.Com" />
+                    <Label htmlFor="email" className="text-xs">Email*</Label>
+                    <Input id="email" type="email" placeholder="example@example.com" />
                   </div>
                   <div>
-                    <Label htmlFor="company">Company (Optional)</Label>
+                    <Label htmlFor="company" className="text-xs">Company (Optional)</Label>
                     <Input id="company" placeholder="Your Company" />
                   </div>
                 </div>
                 
                 <div>
-                  <Label htmlFor="subject">Subject</Label>
+                  <Label htmlFor="subject" className="text-xs">Subject</Label>
                   <Input id="subject" placeholder="How Can We Help You?" />
                 </div>
                 
                 <div>
-                  <Label htmlFor="message">Message</Label>
+                  <Label htmlFor="message" className="text-xs">Message</Label>
                   <Textarea 
                     id="message" 
-                    placeholder="Tell us About Your Advertising Needs..."
+                    placeholder="Tell Us About Your Advertising Needs..."
                     className="min-h-[120px]"
                   />
                 </div>
@@ -209,7 +209,7 @@ const Contact = () => {
                       Need Immediate Help?
                     </span>
                   </CardTitle>
-                  <CardDescription>
+                  <CardDescription className="text-xs">
                     For urgent matters or immediate assistance with your campaigns.
                   </CardDescription>
                 </CardHeader>
