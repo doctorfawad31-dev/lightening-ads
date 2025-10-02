@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 const Input = React.forwardRef<HTMLInputElement, React.ComponentProps<"input">>(
   ({ className, type, ...props }, ref) => {
     return (
-      <div className="relative w-full">
+      <div className="relative w-full transition-all duration-300 focus-within:shadow-[0_0_20px_rgba(255,204,0,0.3)]">
         <div className="absolute inset-0 rounded-md bg-gradient-to-r from-electric-gold to-electric-blue p-[1px]">
           <div className="h-full w-full rounded-md bg-background" />
         </div>
