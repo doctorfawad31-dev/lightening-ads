@@ -11,7 +11,7 @@ import {
   Shield,
   Zap
 } from "lucide-react"
-import teamAnalytics from "@/assets/team-analytics.jpg"
+const teamAnalytics = "https://res.cloudinary.com/djecn7fxz/image/upload/v1759382970/Overlay_Shadow_a8rhot.png"
 
 const About = () => {
   const stats = [
