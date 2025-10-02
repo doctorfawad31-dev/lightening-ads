@@ -28,14 +28,14 @@ const Contact = () => {
       title: "Live Chat",
       description: "Chat with our support team instantly",
       contact: "Available on website",
-      available: "9 AM - 6 PM EST"
+      available: "9 AM - 8 PM EST"
     },
     {
       icon: Phone,
       title: "Phone Support",
       description: "Speak directly with our experts",
       contact: "+1 (555) 123-4567",
-      available: "9 AM - 6 PM EST"
+      available: "9 AM - 8 PM EST"
     }
   ]
 
@@ -61,53 +61,47 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      {/* Hero Section */}
-      <section className="relative pt-20 pb-16 overflow-hidden">
-        <div className="container mx-auto px-6 py-20">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+      {/* Hero Section with Contact Methods */}
+      <section className="relative pt-20 pb-12 overflow-hidden">
+        <div className="container mx-auto px-6 py-12">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Contact Us
-              </span>
+                Contact
+              </span>{" "}
+              <span className="text-foreground">Us</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-sm md:text-base text-muted-foreground mb-8 max-w-2xl mx-auto">
               Ready to scale your advertising campaigns? Get in touch with our team of experts and start your journey to unlimited ad spend today.
             </p>
           </div>
-        </div>
-      </section>
 
-      {/* Contact Methods */}
-      <section className="py-20 bg-card/20">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Get in Touch
-              </span>
+          {/* Get in Touch Section */}
+          <div className="text-center mb-8">
+            <h2 className="text-xl md:text-2xl font-semibold mb-2 text-muted-foreground">
+              Get in Touch
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
               Choose your preferred way to reach us. Our team is ready to help you succeed.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          {/* Contact Methods Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {contactMethods.map((method, index) => {
               const IconComponent = method.icon
               return (
-                <Card key={index} className="text-center border-border/50 hover:border-primary/50 transition-all duration-300 group hover:shadow-electric">
-                  <CardHeader>
-                    <div className="mx-auto p-4 bg-gradient-primary/10 rounded-lg w-fit mb-4 group-hover:shadow-glow transition-all duration-300">
-                      <IconComponent className="h-8 w-8 text-primary" />
+                <Card key={index} className="text-center border-border/50 bg-card/50 backdrop-blur-sm">
+                  <CardContent className="pt-8 pb-8">
+                    <div className="mx-auto p-3 bg-gradient-primary/10 rounded-lg w-fit mb-4">
+                      <IconComponent className="h-6 w-6 text-primary" />
                     </div>
-                    <CardTitle className="text-xl mb-2">{method.title}</CardTitle>
-                    <CardDescription className="text-muted-foreground mb-4">
+                    <h3 className="text-lg font-semibold mb-2">{method.title}</h3>
+                    <p className="text-sm text-muted-foreground mb-4">
                       {method.description}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-primary font-semibold mb-2">{method.contact}</p>
-                    <p className="text-sm text-muted-foreground">{method.available}</p>
+                    </p>
+                    <p className="text-sm text-primary font-medium mb-1">{method.contact}</p>
+                    <p className="text-xs text-muted-foreground">{method.available}</p>
                   </CardContent>
                 </Card>
               )
