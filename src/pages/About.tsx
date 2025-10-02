@@ -43,44 +43,41 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      {/* Hero Section */}
-      <section className="relative pt-20 pb-16 overflow-hidden">
-        <div className="container mx-auto px-6 py-20">
+      {/* Hero Section with Stats */}
+      <section className="relative pt-20 pb-12 overflow-hidden">
+        <div className="container mx-auto px-6 py-12">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                About Lightning Ads
-              </span>
+                About Lightning
+              </span>{" "}
+              <span className="text-foreground">Ads</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-sm md:text-base text-muted-foreground mb-8 max-w-2xl mx-auto">
               We're the leading provider of premium agency advertising accounts, helping businesses scale their campaigns without restrictions across all major platforms.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-20 bg-card/20">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((stat, index) => {
-              const IconComponent = stat.icon
-              return (
-                <Card key={index} className="text-center border-border/50 hover:border-primary/50 transition-all duration-300 group hover:shadow-electric">
-                  <CardHeader>
-                    <div className="mx-auto p-3 bg-gradient-primary/10 rounded-lg w-fit mb-4 group-hover:shadow-glow transition-all duration-300">
-                      <IconComponent className="h-8 w-8 text-primary" />
-                    </div>
-                    <CardTitle className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                      {stat.number}
-                    </CardTitle>
-                    <CardDescription className="text-muted-foreground">
-                      {stat.label}
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              )
-            })}
+            
+            {/* Stats Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-8">
+              {stats.map((stat, index) => {
+                const IconComponent = stat.icon
+                return (
+                  <Card key={index} className="text-center border-border/50 bg-card/50 backdrop-blur-sm">
+                    <CardContent className="pt-6 pb-6">
+                      <div className="mx-auto p-2 bg-gradient-primary/10 rounded-lg w-fit mb-3">
+                        <IconComponent className="h-5 w-5 text-primary" />
+                      </div>
+                      <div className="text-2xl md:text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-1">
+                        {stat.number}
+                      </div>
+                      <div className="text-xs text-muted-foreground">
+                        {stat.label}
+                      </div>
+                    </CardContent>
+                  </Card>
+                )
+              })}
+            </div>
           </div>
         </div>
       </section>
