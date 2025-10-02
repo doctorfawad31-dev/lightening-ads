@@ -29,11 +29,9 @@ const CTA = () => {
           </div>
           
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            Ready to 
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              {" "}Scale Your Business
+              Ready to Scale Your Business?
             </span>
-            ?
           </h2>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto">

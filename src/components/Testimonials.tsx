@@ -64,8 +64,9 @@ const Testimonials = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-lightning-yellow">What Our</span>
-            <span className="text-foreground"> Clients Say</span>
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              What Our Clients Say
+            </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Don't just take our word for it. Here's what industry leaders say about working with Lightning Ads.

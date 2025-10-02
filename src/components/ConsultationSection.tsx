@@ -44,10 +44,11 @@ const ConsultationSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            <span className="bg-gradient-primary bg-clip-text text-transparent">Got a Query? Schedule a Free</span>
-            <br />
-            <span className="bg-gradient-primary bg-clip-text text-transparent">Consultation Session</span>{" "}
-            <span className="text-foreground">with Our Ad Expert</span>
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              Got a Query? Schedule a Free
+              <br />
+              Consultation Session with Our Ad Expert
+            </span>
           </h2>
           <p className="text-foreground mb-4">Schedule a call:</p>
           <Button 

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play } from "lucide-react"
-import heroImage from "@/assets/lightning-hero-bg.jpg"
+import heroImage from "@/assets/hero-marketing-concept.png"
 
 const Hero = () => {
   return (
@@ -20,9 +20,8 @@ const Hero = () => {
         <div className="max-w-xl text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              High-Trust Marketing
-            </span>{" "}
-            <span className="text-foreground">Solutions</span>
+              High-Trust Marketing Solutions
+            </span>
           </h1>
           
           <p className="text-sm md:text-base text-foreground/80 mb-6 max-w-lg">

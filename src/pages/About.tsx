@@ -71,9 +71,8 @@ const About = () => {
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-3xl md:text-5xl font-bold mb-4">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
-                  About Lightning
-                </span>{" "}
-                <span className="text-foreground">Ads</span>
+                  About Lightning Ads
+                </span>
               </h1>
             <p className="text-sm md:text-base text-muted-foreground mb-8 max-w-2xl mx-auto">
               We're the leading provider of premium agency advertising accounts, helping businesses scale their campaigns without restrictions across all major platforms.
