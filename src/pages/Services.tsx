@@ -16,9 +16,10 @@ import {
   Video,
   Camera
 } from "lucide-react"
-import platformsHero from "@/assets/platforms-hero.jpg"
 import agencyDashboard from "@/assets/agency-dashboard.jpg"
 import scalingSolutions from "@/assets/scaling-solutions.jpg"
+
+const platformsHero = "https://res.cloudinary.com/djecn7fxz/image/upload/v1759382260/servces-page-1_zn2xzx.png"
 
 const Services = () => {
   const platformServices = [
