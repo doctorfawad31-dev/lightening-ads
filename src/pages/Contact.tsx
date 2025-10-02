@@ -13,6 +13,12 @@ import {
   MessageSquare,
   Headphones
 } from "lucide-react"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
 const Contact = () => {
   const contactMethods = [
@@ -67,9 +73,8 @@ const Contact = () => {
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Contact
-              </span>{" "}
-              <span className="text-foreground">Us</span>
+                Contact Us
+              </span>
             </h1>
             <p className="text-sm md:text-base text-muted-foreground mb-8 max-w-2xl mx-auto">
               Ready to scale your advertising campaigns? Get in touch with our team of experts and start your journey to unlimited ad spend today.
@@ -78,8 +83,10 @@ const Contact = () => {
 
           {/* Get in Touch Section */}
           <div className="text-center mb-8">
-            <h2 className="text-xl md:text-2xl font-semibold mb-2 text-muted-foreground">
-              Get in Touch
+            <h2 className="text-xl md:text-2xl font-semibold mb-2">
+              <span className="bg-gradient-primary bg-clip-text text-transparent">
+                Get in Touch
+              </span>
             </h2>
             <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
               Choose your preferred way to reach us. Our team is ready to help you succeed.
@@ -226,49 +233,46 @@ const Contact = () => {
       <section className="py-20 bg-card/20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Frequently Asked Questions
-              </span>
+                Frequently Asked
+              </span>{" "}
+              <span className="text-muted-foreground">Questions</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Quick answers to common questions about our services.
+            <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
+              Quick answers to common questions about our services
             </p>
           </div>
 
-          <div className="max-w-3xl mx-auto space-y-6">
-            <Card className="border-border/50">
-              <CardHeader>
-                <CardTitle className="text-lg">How quickly can I get started?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
+          <div className="max-w-3xl mx-auto">
+            <Accordion type="single" collapsible className="space-y-4">
+              <AccordionItem value="item-1" className="border border-border/50 rounded-lg px-6 bg-card/50">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  How quickly can I get started?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
                   Most clients can get their agency accounts set up within 24-48 hours after completing our onboarding process.
-                </p>
-              </CardContent>
-            </Card>
+                </AccordionContent>
+              </AccordionItem>
 
-            <Card className="border-border/50">
-              <CardHeader>
-                <CardTitle className="text-lg">What platforms do you support?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
+              <AccordionItem value="item-2" className="border border-border/50 rounded-lg px-6 bg-card/50">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  What platforms do you support?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
                   We provide agency accounts for Google Ads, Meta (Facebook & Instagram), TikTok, Snapchat, LinkedIn, Twitter/X, and 40+ other advertising platforms.
-                </p>
-              </CardContent>
-            </Card>
+                </AccordionContent>
+              </AccordionItem>
 
-            <Card className="border-border/50">
-              <CardHeader>
-                <CardTitle className="text-lg">Do you offer campaign management?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
+              <AccordionItem value="item-3" className="border border-border/50 rounded-lg px-6 bg-card/50">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  Do you offer campaign management?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
                   Yes, we offer full-service campaign management including setup, optimization, and reporting. You can also choose to manage campaigns yourself with our accounts.
-                </p>
-              </CardContent>
-            </Card>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
