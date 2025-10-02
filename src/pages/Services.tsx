@@ -19,8 +19,7 @@ import {
 } from "lucide-react"
 import agencyDashboard from "@/assets/agency-dashboard.jpg"
 import scalingSolutions from "@/assets/scaling-solutions.jpg"
-
-const platformsHero = "https://res.cloudinary.com/djecn7fxz/image/upload/v1759382260/servces-page-1_zn2xzx.png"
+import servicesHero from "@/assets/services-hero.png"
 
 const Services = () => {
   const structuredData = {
@@ -117,13 +116,11 @@ const Services = () => {
         <Header />
         
         {/* Hero Section */}
-        <section className="relative pt-20 pb-16 overflow-hidden">
+        <section className="relative pt-32 pb-16 overflow-hidden mt-8">
           <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${platformsHero})` }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-background/90 to-background/70" />
-        </div>
+          style={{ backgroundImage: `url(${servicesHero})` }}
+        />
         
         <div className="relative container mx-auto px-6 py-20">
           <div className="max-w-3xl">
