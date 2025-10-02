@@ -1,5 +1,6 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import SEO from "@/components/SEO"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -21,6 +22,25 @@ import {
 } from "@/components/ui/accordion"
 
 const Contact = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Lightning Ads",
+      "telephone": "+1-555-123-4567",
+      "email": "support@lightningads.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Business Ave, Suite 100",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10001",
+        "addressCountry": "US"
+      }
+    }
+  };
+
   const contactMethods = [
     {
       icon: Mail,
@@ -64,18 +84,26 @@ const Contact = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      
-      {/* Hero Section with Contact Methods */}
-      <section className="relative pt-20 pb-12 overflow-hidden">
-        <div className="container mx-auto px-6 py-12">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Contact Us
-              </span>
-            </h1>
+    <>
+      <SEO 
+        title="Contact Lightning Ads - Get Premium Advertising Accounts"
+        description="Contact Lightning Ads to get started with premium agency advertising accounts. Email, live chat, and phone support available. Get access to unlimited ad spend across 40+ platforms."
+        keywords="contact lightning ads, advertising account support, premium ad accounts, agency account help, advertising consultation"
+        canonical="/contact"
+        structuredData={structuredData}
+      />
+      <div className="min-h-screen bg-background">
+        <Header />
+        
+        {/* Hero Section with Contact Methods */}
+        <section className="relative pt-20 pb-12 overflow-hidden">
+          <div className="container mx-auto px-6 py-12">
+            <div className="max-w-4xl mx-auto text-center mb-12">
+              <h1 className="text-3xl md:text-5xl font-bold mb-4">
+                <span className="bg-gradient-primary bg-clip-text text-transparent">
+                  Contact Us
+                </span>
+              </h1>
             <p className="text-xs md:text-sm text-muted-foreground mb-8 max-w-2xl mx-auto">
               Ready to scale your advertising campaigns? Get in touch with our team of experts and start your journey to unlimited ad spend today.
             </p>
@@ -279,6 +307,7 @@ const Contact = () => {
 
       <Footer />
     </div>
+    </>
   )
 }
 

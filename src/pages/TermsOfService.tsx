@@ -1,13 +1,22 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import SEO from "@/components/SEO"
 
 const TermsOfService = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      <main className="container mx-auto px-6 py-16 max-w-4xl">
-        <div className="prose prose-gray dark:prose-invert max-w-none">
-          <h1 className="text-4xl font-bold mb-8 text-foreground">Terms of Service</h1>
+    <>
+      <SEO 
+        title="Terms of Service - Lightning Ads"
+        description="Read the terms and conditions for using Lightning Ads premium advertising account services. Understand your rights and responsibilities."
+        keywords="terms of service, terms and conditions, user agreement, service terms"
+        canonical="/terms-of-service"
+        ogType="article"
+      />
+      <div className="min-h-screen bg-background">
+        <Header />
+        <main className="container mx-auto px-6 py-16 max-w-4xl">
+          <div className="prose prose-gray dark:prose-invert max-w-none">
+            <h1 className="text-4xl font-bold mb-8 text-foreground">Terms of Service</h1>
           
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4 text-foreground">Overview</h2>
@@ -286,6 +295,7 @@ const TermsOfService = () => {
       </main>
       <Footer />
     </div>
+    </>
   )
 }
 

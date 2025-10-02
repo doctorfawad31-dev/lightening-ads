@@ -1,5 +1,6 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import SEO from "@/components/SEO"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -14,6 +15,17 @@ import {
 } from "lucide-react"
 
 const Blog = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Lightning Ads Blog",
+    "description": "Expert insights, strategies, and updates on premium advertising accounts",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Lightning Ads"
+    }
+  };
+
   const featuredPost = {
     title: "The Complete Guide to Agency Ad Accounts in 2024",
     excerpt: "Everything you need to know about premium agency accounts, from setup to scaling your campaigns across multiple platforms.",
@@ -84,18 +96,26 @@ const Blog = () => {
   const categories = ["All", "Guides", "Google Ads", "Meta", "TikTok", "Snapchat", "Strategy", "Compliance"]
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      
-      {/* Hero Section */}
-      <section className="relative pt-20 pb-16 overflow-hidden">
-        <div className="container mx-auto px-6 py-20">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Lightning Ads Blog
-              </span>
-            </h1>
+    <>
+      <SEO 
+        title="Blog - Expert Advertising Insights & Strategies"
+        description="Get expert insights, strategies, and tips on scaling advertising campaigns with premium agency accounts. Learn about Google Ads, Meta, TikTok, and more."
+        keywords="advertising blog, marketing strategies, Google Ads tips, Meta advertising, TikTok ads guide, agency account strategies"
+        canonical="/blog"
+        structuredData={structuredData}
+      />
+      <div className="min-h-screen bg-background">
+        <Header />
+        
+        {/* Hero Section */}
+        <section className="relative pt-20 pb-16 overflow-hidden">
+          <div className="container mx-auto px-6 py-20">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                <span className="bg-gradient-primary bg-clip-text text-transparent">
+                  Lightning Ads Blog
+                </span>
+              </h1>
             <p className="text-xl text-muted-foreground mb-8">
               Expert insights, strategies, and updates from the world of premium advertising accounts and campaign management.
             </p>
@@ -271,6 +291,7 @@ const Blog = () => {
 
       <Footer />
     </div>
+    </>
   )
 }
 

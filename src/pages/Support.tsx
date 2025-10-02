@@ -1,5 +1,6 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import SEO from "@/components/SEO"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -23,6 +24,21 @@ import {
 } from "lucide-react"
 
 const Support = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I get started with agency accounts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Getting started is simple! Contact our team through live chat or email, and we'll guide you through the onboarding process. Most clients can get their accounts set up within 24-48 hours."
+        }
+      }
+    ]
+  };
+
   const supportChannels = [
     {
       icon: MessageSquare,
@@ -121,18 +137,26 @@ const Support = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      
-      {/* Hero Section */}
-      <section className="relative pt-20 pb-16 overflow-hidden">
-        <div className="container mx-auto px-6 py-20">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Support Center
-              </span>
-            </h1>
+    <>
+      <SEO 
+        title="Support Center - 24/7 Help for Lightning Ads Clients"
+        description="Get expert support for your advertising campaigns 24/7. Access knowledge base, live chat, email support, and phone assistance. We're here to help you succeed."
+        keywords="advertising support, campaign help, agency account support, marketing support, 24/7 customer service"
+        canonical="/support"
+        structuredData={structuredData}
+      />
+      <div className="min-h-screen bg-background">
+        <Header />
+        
+        {/* Hero Section */}
+        <section className="relative pt-20 pb-16 overflow-hidden">
+          <div className="container mx-auto px-6 py-20">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                <span className="bg-gradient-primary bg-clip-text text-transparent">
+                  Support Center
+                </span>
+              </h1>
             <p className="text-xl text-muted-foreground mb-8">
               Get the help you need to succeed with your advertising campaigns. Our expert team is here to support you 24/7.
             </p>
@@ -344,6 +368,7 @@ const Support = () => {
 
       <Footer />
     </div>
+    </>
   )
 }
 

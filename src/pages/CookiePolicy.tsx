@@ -1,13 +1,22 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const CookiePolicy = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      <main className="py-16">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h1 className="text-4xl font-bold text-foreground mb-8">Cookie Policy</h1>
+    <>
+      <SEO 
+        title="Cookie Policy - Lightning Ads"
+        description="Learn about how Lightning Ads uses cookies to improve your experience on our website and provide better advertising account services."
+        keywords="cookie policy, cookies, website tracking, privacy"
+        canonical="/cookie-policy"
+        ogType="article"
+      />
+      <div className="min-h-screen bg-background">
+        <Header />
+        <main className="py-16">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h1 className="text-4xl font-bold text-foreground mb-8">Cookie Policy</h1>
           
           <div className="prose prose-lg max-w-none">
             <section className="mb-8">
@@ -379,6 +388,7 @@ const CookiePolicy = () => {
       </main>
       <Footer />
     </div>
+    </>
   );
 };
 

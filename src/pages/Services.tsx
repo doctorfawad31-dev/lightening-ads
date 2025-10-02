@@ -1,5 +1,6 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import SEO from "@/components/SEO"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -22,6 +23,18 @@ import scalingSolutions from "@/assets/scaling-solutions.jpg"
 const platformsHero = "https://res.cloudinary.com/djecn7fxz/image/upload/v1759382260/servces-page-1_zn2xzx.png"
 
 const Services = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Premium Advertising Account Services",
+    "provider": {
+      "@type": "Organization",
+      "name": "Lightning Ads"
+    },
+    "areaServed": "Worldwide",
+    "description": "Premium agency advertising accounts for Google Ads, Meta, TikTok, and 40+ platforms with unlimited spending limits"
+  };
+
   const platformServices = [
     {
       icon: Globe,
@@ -92,12 +105,20 @@ const Services = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      
-      {/* Hero Section */}
-      <section className="relative pt-20 pb-16 overflow-hidden">
-        <div 
+    <>
+      <SEO 
+        title="Services - Premium Advertising Account Solutions"
+        description="Explore Lightning Ads services including premium Google Ads, Meta, TikTok, and 40+ platform agency accounts. Campaign management, account protection, and unlimited spending limits."
+        keywords="advertising services, agency accounts, Google Ads accounts, Meta advertising, TikTok ads, campaign management, account protection"
+        canonical="/services"
+        structuredData={structuredData}
+      />
+      <div className="min-h-screen bg-background">
+        <Header />
+        
+        {/* Hero Section */}
+        <section className="relative pt-20 pb-16 overflow-hidden">
+          <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${platformsHero})` }}
         >
@@ -322,6 +343,7 @@ const Services = () => {
 
       <Footer />
     </div>
+    </>
   )
 }
 

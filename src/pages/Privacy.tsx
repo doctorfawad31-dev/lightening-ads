@@ -1,13 +1,22 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import SEO from "@/components/SEO"
 
 const Privacy = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      <main className="container mx-auto px-6 pt-24 pb-16 max-w-4xl">
-        <div className="prose prose-lg max-w-none">
-          <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
+    <>
+      <SEO 
+        title="Privacy Policy - Lightning Ads"
+        description="Read Lightning Ads privacy policy to understand how we collect, use, and protect your personal information when using our premium advertising account services."
+        keywords="privacy policy, data protection, personal information, privacy terms"
+        canonical="/privacy"
+        ogType="article"
+      />
+      <div className="min-h-screen bg-background">
+        <Header />
+        <main className="container mx-auto px-6 pt-24 pb-16 max-w-4xl">
+          <div className="prose prose-lg max-w-none">
+            <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
           
           <div className="space-y-8 text-foreground">
             <p>
@@ -336,6 +345,7 @@ const Privacy = () => {
       </main>
       <Footer />
     </div>
+    </>
   )
 }
 

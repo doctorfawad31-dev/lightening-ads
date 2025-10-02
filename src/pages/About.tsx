@@ -1,5 +1,6 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import SEO from "@/components/SEO"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -14,6 +15,19 @@ import {
 const teamAnalytics = "https://res.cloudinary.com/djecn7fxz/image/upload/v1759382970/Overlay_Shadow_a8rhot.png"
 
 const About = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Lightning Ads",
+      "description": "Leading provider of premium agency advertising accounts helping businesses scale campaigns without restrictions",
+      "foundingDate": "2020",
+      "numberOfEmployees": "50-100",
+      "slogan": "High-Trust Marketing Solutions"
+    }
+  };
+
   const stats = [
     { number: "500+", label: "Active Clients", icon: Users },
     { number: "$50M+", label: "Ad Spend Managed", icon: Target },
@@ -40,19 +54,27 @@ const About = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      
-      {/* Hero Section with Stats */}
-      <section className="relative pt-20 pb-12 overflow-hidden">
-        <div className="container mx-auto px-6 py-12">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                About Lightning
-              </span>{" "}
-              <span className="text-foreground">Ads</span>
-            </h1>
+    <>
+      <SEO 
+        title="About Lightning Ads - Premium Advertising Account Provider"
+        description="Learn about Lightning Ads, the leading provider of premium agency advertising accounts. We help businesses scale campaigns without restrictions across 40+ platforms including Google, Meta, and TikTok."
+        keywords="about lightning ads, advertising agency, premium ad accounts provider, agency account services, marketing solutions"
+        canonical="/about"
+        structuredData={structuredData}
+      />
+      <div className="min-h-screen bg-background">
+        <Header />
+        
+        {/* Hero Section with Stats */}
+        <section className="relative pt-20 pb-12 overflow-hidden">
+          <div className="container mx-auto px-6 py-12">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-3xl md:text-5xl font-bold mb-4">
+                <span className="bg-gradient-primary bg-clip-text text-transparent">
+                  About Lightning
+                </span>{" "}
+                <span className="text-foreground">Ads</span>
+              </h1>
             <p className="text-sm md:text-base text-muted-foreground mb-8 max-w-2xl mx-auto">
               We're the leading provider of premium agency advertising accounts, helping businesses scale their campaigns without restrictions across all major platforms.
             </p>
@@ -177,6 +199,7 @@ const About = () => {
 
       <Footer />
     </div>
+    </>
   )
 }
 
