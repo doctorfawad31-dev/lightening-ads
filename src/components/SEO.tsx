@@ -15,7 +15,7 @@ const SEO = ({
   description, 
   keywords = "advertising accounts, agency accounts, premium ad accounts, Google Ads, Meta Ads, TikTok Ads, unlimited ad spend, marketing agency",
   canonical,
-  ogImage = "https://lovable.dev/opengraph-image-p98pqg.png",
+  ogImage = "/icon-512.png",
   ogType = "website",
   structuredData
 }: SEOProps) => {

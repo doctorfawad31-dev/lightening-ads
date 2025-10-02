@@ -17,7 +17,7 @@ const Index = () => {
     "name": "Lightning Ads",
     "description": "Premium advertising agency accounts with unlimited spending limits across all major platforms",
     "url": "https://lightningads.com",
-    "logo": "https://lovable.dev/opengraph-image-p98pqg.png",
+    "logo": "/icon-512.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+1-555-123-4567",
