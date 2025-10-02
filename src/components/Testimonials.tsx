@@ -15,7 +15,7 @@ const Testimonials = () => {
     name: "Sarah Johnson",
     role: "E-commerce Director",
     company: "TechFlow Inc.",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
+    image: "https://res.cloudinary.com/djecn7fxz/image/upload/v1759390366/image_2_opaqsc.png",
     content: "Lightning Ads transformed our advertising performance. We saw a 300% increase in ROAS within the first month. Their team is incredible!",
     rating: 5
   }
