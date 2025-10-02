@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
-import logoImage from "@/assets/light-ads-logo.png"
+import logoImage from "@/assets/lightning-ads-logo-new.png"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -15,7 +15,7 @@ const Header = () => {
             <img 
               src={logoImage} 
               alt="Lightning Ads Logo" 
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </div>
 

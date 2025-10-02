@@ -1,5 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react"
-import logoImage from "@/assets/light-ads-logo.png"
+import logoImage from "@/assets/lightning-ads-logo-new.png"
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
               <img 
                 src={logoImage} 
                 alt="Lightning Ads Logo" 
-                className="h-12 w-auto"
+                className="h-16 w-auto"
               />
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
