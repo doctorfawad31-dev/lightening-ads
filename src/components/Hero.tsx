@@ -4,7 +4,7 @@ import heroImage from "@/assets/lightning-hero-bg.jpg"
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-[600px] flex items-center justify-center overflow-hidden mt-20">
+    <section id="home" className="relative min-h-[700px] md:min-h-[800px] flex items-center justify-center overflow-hidden mt-20">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
@@ -26,7 +26,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-sm md:text-base text-foreground/80 mb-6 max-w-lg">
-            Access aged, warmed marketing agency accounts with unlimited spending limits across all major platforms. Skip the restrictions and scale immediately.
+            Access aged, warmed marketing agency accounts with unlimited spending limits. Skip restrictions and scale immediately.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 mb-8">

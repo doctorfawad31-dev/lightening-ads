@@ -72,7 +72,7 @@ const PlatformBanner = () => {
             </span>
           </h2>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            Get access to premium, aged advertising accounts across Google, Meta, TikTok, Snapchat, LinkedIn and 40+ platforms. Say goodbye to sudden bans and spending limits—focus on scaling campaigns with stability and confidence.
+            Get access to premium, aged advertising accounts across Google, Meta, TikTok, Snapchat, LinkedIn and 40+ platforms. Say goodbye to sudden bans and spending limits.
           </p>
         </div>
 
