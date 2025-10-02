@@ -12,7 +12,7 @@ const Footer = () => {
               <img 
                 src={logoImage} 
                 alt="Lightning Ads Logo" 
-                className="h-16 w-auto"
+                className="h-14 w-auto"
               />
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">

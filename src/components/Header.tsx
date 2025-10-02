@@ -15,7 +15,7 @@ const Header = () => {
             <img 
               src={logoImage} 
               alt="Lightning Ads Logo" 
-              className="h-16 w-auto"
+              className="h-14 w-auto"
             />
           </div>
 
