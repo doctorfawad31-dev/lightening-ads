@@ -117,7 +117,11 @@ const Contact = () => {
             {/* Contact Form */}
             <Card className="border-border/50">
               <CardHeader>
-                <CardTitle className="text-2xl">Send us a Message</CardTitle>
+                <CardTitle className="text-2xl">
+                  <span className="bg-gradient-primary bg-clip-text text-transparent">
+                    Contact us
+                  </span>
+                </CardTitle>
                 <CardDescription>
                   Fill out the form below and we'll get back to you within 24 hours.
                 </CardDescription>
@@ -125,35 +129,36 @@ const Contact = () => {
               <CardContent className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="firstName">First Name</Label>
-                    <Input id="firstName" placeholder="John" />
+                    <Label htmlFor="firstName">Full Name*</Label>
+                    <Input id="firstName" placeholder="Name" />
                   </div>
                   <div>
                     <Label htmlFor="lastName">Last Name</Label>
-                    <Input id="lastName" placeholder="Doe" />
+                    <Input id="lastName" placeholder="Last Name" />
                   </div>
                 </div>
                 
-                <div>
-                  <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="john@example.com" />
-                </div>
-                
-                <div>
-                  <Label htmlFor="company">Company (Optional)</Label>
-                  <Input id="company" placeholder="Your Company" />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <Label htmlFor="email">Email*</Label>
+                    <Input id="email" type="email" placeholder="John@Example.Com" />
+                  </div>
+                  <div>
+                    <Label htmlFor="company">Company (Optional)</Label>
+                    <Input id="company" placeholder="Your Company" />
+                  </div>
                 </div>
                 
                 <div>
                   <Label htmlFor="subject">Subject</Label>
-                  <Input id="subject" placeholder="How can we help you?" />
+                  <Input id="subject" placeholder="How Can We Help You?" />
                 </div>
                 
                 <div>
                   <Label htmlFor="message">Message</Label>
                   <Textarea 
                     id="message" 
-                    placeholder="Tell us about your advertising needs..."
+                    placeholder="Tell us About Your Advertising Needs..."
                     className="min-h-[120px]"
                   />
                 </div>
@@ -192,7 +197,11 @@ const Contact = () => {
 
               <Card className="border-border/50 bg-gradient-primary/5">
                 <CardHeader>
-                  <CardTitle className="text-xl">Need Immediate Help?</CardTitle>
+                  <CardTitle className="text-xl">
+                    <span className="bg-gradient-primary bg-clip-text text-transparent">
+                      Need Immediate Help?
+                    </span>
+                  </CardTitle>
                   <CardDescription>
                     For urgent matters or immediate assistance with your campaigns.
                   </CardDescription>
