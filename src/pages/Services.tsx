@@ -123,6 +123,8 @@ const Services = () => {
               alt="Advertising Services" 
               className="w-full h-full object-cover object-center"
             />
+            {/* Mobile Overlay for better text visibility */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70 md:hidden" />
           </div>
         
         <div className="relative container mx-auto px-6 py-20">
