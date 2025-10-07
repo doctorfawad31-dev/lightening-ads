@@ -116,12 +116,12 @@ const Services = () => {
         <Header />
         
         {/* Hero Section */}
-        <section className="relative pt-24 sm:pt-32 md:pt-40 pb-12 sm:pb-20 md:pb-32 overflow-hidden mt-8 min-h-[500px] sm:min-h-[600px] md:min-h-[750px]">
+        <section className="relative pt-24 sm:pt-32 md:pt-40 pb-12 sm:pb-20 md:pb-32 overflow-hidden mt-8 min-h-[400px] sm:min-h-[500px] md:min-h-[600px]">
           <div className="absolute inset-0">
             <img 
               src={servicesHero} 
               alt="Advertising Services" 
-              className="w-full h-full object-contain object-center md:object-cover"
+              className="w-full h-full object-cover object-center"
             />
           </div>
         
