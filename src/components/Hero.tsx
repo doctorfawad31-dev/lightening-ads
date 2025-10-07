@@ -10,8 +10,10 @@ const Hero = () => {
         <img 
           src={heroImage} 
           alt="High-Trust Marketing Solutions" 
-          className="w-full h-full object-contain lg:object-cover"
+          className="w-full h-full object-cover object-center"
         />
+        {/* Mobile overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60 lg:hidden" />
       </div>
 
       {/* Content */}
