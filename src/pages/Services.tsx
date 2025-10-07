@@ -1,5 +1,6 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import React, { useState, useEffect } from 'react';
 import SEO from "@/components/SEO"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -20,8 +21,31 @@ import {
 import agencyDashboard from "@/assets/agency-dashboard.jpg"
 import scalingSolutions from "@/assets/scaling-solutions.jpg"
 import servicesHero from "@/assets/services-hero.png"
-
+import servicesHero2 from "@/assets/services-hero-2.png";
 const Services = () => {
+
+  const [currentImage, setCurrentImage] = useState(servicesHero);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Check if screen is medium size or smaller (md breakpoint typically 768px)
+      if (window.innerWidth < 1024) { // lg breakpoint
+        setCurrentImage(servicesHero2);
+      } else {
+        setCurrentImage(servicesHero);
+      }
+    };
+
+    // Set initial image
+    handleResize();
+
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -115,32 +139,45 @@ const Services = () => {
       <div className="min-h-screen bg-background">
         <Header />
         
-        {/* Hero Section */}
-        <section className="relative pt-24 sm:pt-32 md:pt-40 pb-12 sm:pb-20 md:pb-32 overflow-hidden mt-8 min-h-[400px] sm:min-h-[500px] md:min-h-[700px]">
-          <div
-           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${servicesHero})` }}
-        >
-          {/* Mobile overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60 lg:hidden" />
+    <section className="relative pt-24 sm:pt-32 md:pt-40 pb-12 sm:pb-20 md:pb-32 overflow-hidden mt-8 min-h-[400px] sm:min-h-[500px] md:min-h-[700px]">
+      <div
+        className="absolute inset-0 bg-cover bg-center transition-all duration-500"
+        style={{ backgroundImage: `url(${currentImage})` }}
+      >
+        {/* Mobile overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60 lg:hidden" />
+      </div>
+      
+      <div className="relative container mx-auto px-6 py-20">
+        <div className="max-w-3xl">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+              Advertising Services
+            </span>
+          </h1>
+          <p className="text-xl text-white/80 mb-8">
+            Comprehensive agency account solutions across all major advertising platforms. Scale your campaigns without restrictions.
+          </p>
+          <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300">
+            Get Started Today
+          </button>
         </div>
-        
-        <div className="relative container mx-auto px-6 py-20">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Advertising Services
-              </span>
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              Comprehensive agency account solutions across all major advertising platforms. Scale your campaigns without restrictions.
-            </p>
-            <Button size="lg" className="bg-gradient-primary hover:shadow-electric transition-all duration-300">
-              Get Started Today
-            </Button>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       {/* Platform Services */}
       <section className="py-20 bg-card/20">
