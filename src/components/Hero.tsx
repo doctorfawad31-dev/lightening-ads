@@ -10,7 +10,7 @@ const Hero = () => {
         <img 
           src={heroImage} 
           alt="High-Trust Marketing Solutions" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain lg:object-cover"
         />
       </div>
 

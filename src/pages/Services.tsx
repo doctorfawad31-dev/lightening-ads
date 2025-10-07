@@ -118,7 +118,7 @@ const Services = () => {
         {/* Hero Section */}
         <section className="relative pt-24 sm:pt-32 md:pt-40 pb-12 sm:pb-20 md:pb-32 overflow-hidden mt-8 min-h-[400px] sm:min-h-[500px] md:min-h-[700px]">
           <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-no-repeat bg-contain lg:bg-cover bg-center"
           style={{ backgroundImage: `url(${servicesHero})` }}
         />
         
