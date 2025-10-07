@@ -116,16 +116,11 @@ const Services = () => {
         <Header />
         
         {/* Hero Section */}
-        <section className="relative pt-24 sm:pt-32 md:pt-40 pb-12 sm:pb-20 md:pb-32 overflow-hidden mt-8 min-h-[400px] sm:min-h-[500px] md:min-h-[600px]">
-          <div className="absolute inset-0">
-            <img 
-              src={servicesHero} 
-              alt="Advertising Services" 
-              className="w-full h-full object-cover object-center"
-            />
-            {/* Mobile Overlay for better text visibility */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70 md:hidden" />
-          </div>
+        <section className="relative pt-24 sm:pt-32 md:pt-40 pb-12 sm:pb-20 md:pb-32 overflow-hidden mt-8 min-h-[400px] sm:min-h-[500px] md:min-h-[700px]">
+          <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${servicesHero})` }}
+        />
         
         <div className="relative container mx-auto px-6 py-20">
           <div className="max-w-3xl">
