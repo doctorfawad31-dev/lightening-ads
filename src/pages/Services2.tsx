@@ -22,91 +22,35 @@ import agencyDashboard from "@/assets/agency-dashboard.jpg"
 import scalingSolutions from "@/assets/scaling-solutions.jpg"
 import servicesHero from "@/assets/services-hero.png"
 import servicesHero2 from "@/assets/services-hero-2.png";
-
 const Services = () => {
-    const structuredData = {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "Premium Advertising Account Services",
-      "provider": {
-        "@type": "Organization",
-        "name": "Lightning Ads"
-      },
-      "areaServed": "Worldwide",
-      "description": "Premium agency advertising accounts for Google Ads, Meta, TikTok, and 40+ platforms with unlimited spending limits"
+
+  const [currentImage, setCurrentImage] = useState(servicesHero);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Check if screen is medium size or smaller (md breakpoint typically 768px)
+      if (window.innerWidth < 1024) { // lg breakpoint
+        setCurrentImage(servicesHero2);
+      } else {
+        setCurrentImage(servicesHero);
+      }
     };
-  
-    const platformServices = [
-      {
-        icon: Globe,
-        title: "Google Ads Agency Accounts",
-        description: "Premium Google Ads accounts with unlimited spending limits and high trust scores.",
-        features: ["Search Campaigns", "Display Network", "YouTube Advertising", "Shopping Campaigns"],
-        badge: "Most Popular"
-      },
-      {
-        icon: Users,
-        title: "Meta (Facebook & Instagram)",
-        description: "Aged Meta advertising accounts for Facebook and Instagram campaigns.",
-        features: ["Facebook Ads", "Instagram Ads", "Reels Advertising", "Stories Promotion"],
-        badge: ""
-      },
-      {
-        icon: Video,
-        title: "TikTok for Business",
-        description: "High-performance TikTok advertising accounts for reaching younger demographics.",
-        features: ["In-Feed Ads", "Branded Effects", "TopView Campaigns", "Spark Ads"],
-        badge: "Trending"
-      },
-      {
-        icon: Camera,
-        title: "Snapchat Ads",
-        description: "Premium Snapchat advertising accounts for creative campaign formats.",
-        features: ["Snap Ads", "Story Ads", "Collection Ads", "AR Lenses"],
-        badge: ""
-      },
-      {
-        icon: Target,
-        title: "Twitter/X Advertising",
-        description: "Professional Twitter advertising accounts for B2B and engagement campaigns.",
-        features: ["Promoted Tweets", "Video Ads", "Conversation Ads", "Takeover Campaigns"],
-        badge: ""
-      },
-      {
-        icon: Smartphone,
-        title: "LinkedIn Business",
-        description: "Enterprise LinkedIn advertising accounts for professional targeting.",
-        features: ["Sponsored Content", "Message Ads", "Dynamic Ads", "Lead Gen Forms"],
-        badge: "Enterprise"
-      }
-    ]
-  
-    const mainServices = [
-      {
-        icon: Target,
-        title: "Premium Agency Accounts",
-        description: "Access aged, warmed advertising accounts with established trust scores and unlimited spending limits across all platforms.",
-        features: ["Aged Facebook & Instagram", "High-Trust Google Ads", "Warmed TikTok Accounts", "Unlimited Spending Limits"],
-        badge: "Most Popular"
-      },
-      {
-        icon: TrendingUp,
-        title: "Campaign Management",
-        description: "Full-service campaign optimization and management by our team of certified experts.",
-        features: ["Campaign Setup", "A/B Testing", "Performance Optimization", "Reporting"],
-        badge: ""
-      },
-      {
-        icon: Shield,
-        title: "Account Protection",
-        description: "Advanced account warming and protection services to ensure long-term campaign stability.",
-        features: ["Account Warming", "Compliance Monitoring", "Risk Management", "24/7 Support"],
-        badge: ""
-      }
-    ]
+
+    // Set initial image
+    handleResize();
+
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
+
   return (
     <>
-       <SEO 
+      <SEO 
         title="Services - Premium Advertising Account Solutions"
         description="Explore Lightning Ads services including premium Google Ads, Meta, TikTok, and 40+ platform agency accounts. Campaign management, account protection, and unlimited spending limits."
         keywords="advertising services, agency accounts, Google Ads accounts, Meta advertising, TikTok ads, campaign management, account protection"
@@ -116,55 +60,43 @@ const Services = () => {
       <div className="min-h-screen bg-background">
         <Header />
         
-        {/* Hero Section */}
-        <section className="relative pt-16 md:pt-28 pb-12 sm:pb-20 md:pb-32 overflow-hidden mt-8 min-h-[200px] sm:min-h-[400px] md:min-h-[460px]">
-          {/* Background for large screens */}
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat hidden lg:block"
-            style={{ backgroundImage: `url(${servicesHero})` }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
-          </div>
-          
-          {/* Background for medium screens */}
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat hidden md:block lg:hidden"
-            style={{ backgroundImage: `url(${servicesHero2})` }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
-          </div>
-          
-          {/* Background for small screens - smaller size but still covers */}
-          <div
-            className="absolute inset-0 bg-cover bg-top bg-no-repeat md:hidden"
-            style={{ 
-              backgroundImage: `url(${servicesHero2})`,
-              backgroundSize: 'auto 80%', // Image height 80% of container, width auto
-              backgroundPosition: 'top center'
-            }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
-          </div>
-          
-          <div className="relative container mx-auto px-6 py-20">
-            <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-                  Advertising Services
-                </span>
-              </h1>
-              <p className="text-xl text-white/80 mb-8">
-                Comprehensive agency account solutions across all major advertising platforms. Scale your campaigns without restrictions.
-              </p>
-              <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300">
-                Get Started Today
-              </button>
-            </div>
-          </div>
-        </section>
+    <section className="relative pt-24 sm:pt-32 md:pt-40 pb-12 sm:pb-20 md:pb-32 overflow-hidden mt-8 min-h-[400px] sm:min-h-[500px] md:min-h-[700px]">
+      <div
+        className="absolute inset-0 bg-cover bg-center transition-all duration-500"
+        style={{ backgroundImage: `url(${currentImage})` }}
+      >
+        {/* Mobile overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60 lg:hidden" />
+      </div>
+      
+      <div className="relative container mx-auto px-6 py-20">
+        <div className="max-w-3xl">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+              Advertising Services
+            </span>
+          </h1>
+          <p className="text-xl text-white/80 mb-8">
+            Comprehensive agency account solutions across all major advertising platforms. Scale your campaigns without restrictions.
+          </p>
+          <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300">
+            Get Started Today
+          </button>
+        </div>
+      </div>
+    </section>
 
-        {/* Rest of your content will go here */}
-        
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -366,8 +298,9 @@ const Services = () => {
           </div>
         </div>
       </section>
-        <Footer />
-      </div>
+
+      <Footer />
+    </div>
     </>
   )
 }
