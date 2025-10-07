@@ -4,13 +4,13 @@ import heroImage from "@/assets/hero-main.png"
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-[500px] sm:min-h-[600px] md:min-h-[800px] flex items-center justify-center overflow-hidden mt-20">
+    <section id="home" className="relative min-h-[600px] sm:min-h-[700px] md:min-h-[850px] lg:min-h-[900px] flex items-center justify-center overflow-hidden mt-20">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
           src={heroImage} 
           alt="High-Trust Marketing Solutions" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain object-center md:object-cover"
         />
       </div>
 
