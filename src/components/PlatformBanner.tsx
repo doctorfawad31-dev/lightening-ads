@@ -65,13 +65,11 @@ const PlatformBanner = () => {
         <div className="text-center max-w-4xl mx-auto mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight px-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Power Your Ads
+              Power Your Ads with Premium Agency Accounts
             </span>{" "}
-            <span className="text-foreground">
-              with Premium Agency Accounts
-            </span>
+           
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto px-4">
+          <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto px-4">
             Get access to premium, aged advertising accounts across Google, Meta, TikTok, Snapchat, LinkedIn and 40+ platforms. Say goodbye to sudden bans and spending limits.
           </p>
         </div>

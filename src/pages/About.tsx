@@ -69,12 +69,13 @@ const About = () => {
         <section className="relative pt-20 pb-12 overflow-hidden">
           <div className="container mx-auto px-6 py-12">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-3xl md:text-5xl font-bold mb-4">
+            
+               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                   About Lightning Ads
-                </span>
-              </h1>
-            <p className="text-sm md:text-base text-muted-foreground mb-8 max-w-2xl mx-auto">
+                </span>{" "}
+              </h2>
+            <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
               We're the leading provider of premium agency advertising accounts, helping businesses scale their campaigns without restrictions across all major platforms.
             </p>
             
@@ -108,20 +109,21 @@ const About = () => {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                   Our Story
-                </span>
+                </span>{" "}
               </h2>
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
                 Lightning Ads was founded with a simple mission: to remove the barriers that prevent businesses from scaling their advertising campaigns. We recognized that account restrictions, spending limits, and platform bans were holding back countless entrepreneurs and agencies.
               </p>
-              <p className="text-lg text-muted-foreground mb-6">
+              <br />
+              <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
                 Since our inception, we've built relationships with premium account providers across all major advertising platforms, allowing us to offer aged, warmed accounts with unlimited spending capabilities and high trust scores.
-              </p>
-              <p className="text-lg text-muted-foreground mb-8">
+              </p><br />
+              <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
                 Today, we serve over 500 active clients, managing more than $50M in monthly ad spend across Google, Meta, TikTok, Snapchat, and 40+ other platforms.
-              </p>
+              </p><br />
               <Button className="bg-gradient-primary hover:shadow-electric transition-all duration-300">
                 Get Started
               </Button>
@@ -141,12 +143,12 @@ const About = () => {
       <section className="py-20 bg-card/20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Our Values
-              </span>
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
+                <span className="bg-gradient-primary bg-clip-text text-transparent">
+                  Our Values
+                </span>{" "}
+              </h2>
+            <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
               The principles that guide everything we do and shape our commitment to client success.
             </p>
           </div>
@@ -176,14 +178,15 @@ const About = () => {
       <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-4xl font-bold mb-6">
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Ready to Scale Your Campaigns?
-              </span>
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8">
+          
+             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
+                <span className="bg-gradient-primary bg-clip-text text-transparent">
+                    Ready to Scale Your Campaigns?
+                </span>{" "}
+              </h2>
+            <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
               Join hundreds of successful advertisers who trust Lightning Ads for their agency account needs.
-            </p>
+            </p> <br />
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-gradient-primary hover:shadow-electric transition-all duration-300">
                 Get Agency Accounts

@@ -99,24 +99,29 @@ const Contact = () => {
         <section className="relative pt-20 pb-12 overflow-hidden">
           <div className="container mx-auto px-6 py-12">
             <div className="max-w-4xl mx-auto text-center mb-12">
-              <h1 className="text-3xl md:text-5xl font-bold mb-4">
+              {/* <h1 className="text-3xl md:text-5xl font-bold mb-4">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                   Contact Us
                 </span>
-              </h1>
-            <p className="text-xs md:text-sm text-muted-foreground mb-8 max-w-2xl mx-auto">
+              </h1> */}
+               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
+                <span className="bg-gradient-primary bg-clip-text text-transparent">
+                   Contact Us
+                </span>{" "}
+              </h2>
+            <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
               Ready to scale your advertising campaigns? Get in touch with our team of experts and start your journey to unlimited ad spend today.
             </p>
           </div>
 
           {/* Get in Touch Section */}
           <div className="text-center mb-8">
-            <h2 className="text-xl md:text-2xl font-semibold mb-2">
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Get in Touch
-              </span>
-            </h2>
-            <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
+                <span className="bg-gradient-primary bg-clip-text text-transparent">
+                 Get in touch
+                </span>{" "}
+              </h2>
+            <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
               Choose your preferred way to reach us. Our team is ready to help you succeed.
             </p>
           </div>
@@ -157,7 +162,7 @@ const Contact = () => {
                     Contact us
                   </span>
                 </CardTitle>
-                <CardDescription className="text-xs">
+                <CardDescription className="text-xs text-white">
                   Fill out the form below and we'll get back to you within 24 hours.
                 </CardDescription>
               </CardHeader>

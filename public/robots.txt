@@ -12,3 +12,7 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+
+# Sitemap reference
+Sitemap: http://localhost:8080/sitemap.xml

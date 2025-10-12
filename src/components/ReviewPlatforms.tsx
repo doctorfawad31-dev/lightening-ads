@@ -2,11 +2,18 @@ const ReviewPlatforms = () => {
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
-          <span className="bg-gradient-primary bg-clip-text text-transparent">We are loved all over the</span>
+        {/* <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+          <span className="bg-gradient-primary bg-clip-text text-transparent">We are loved all over the internet by many!</span>
           <br />
-          <span className="text-foreground">internet by many!</span>
-        </h2>
+          
+        </h2> */}
+
+         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight text-center">
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+             We are loved all over the internet by many!
+            </span>{" "}
+           
+          </h2>
         
         <div className="flex justify-center items-center">
           <img 

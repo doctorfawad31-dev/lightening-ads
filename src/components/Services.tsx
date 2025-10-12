@@ -61,12 +61,18 @@ const services = [
     <section id="services" className="py-20 bg-card/20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          {/* <h2 className="sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Agency Account Solutions
             </span>
+          </h2> */}
+           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight px-4">
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+               Agency Account Solutions
+            </span>{" "}
+           
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto px-4">
             Access premium, aged advertising accounts across Google, Meta, TikTok, Snapchat, LinkedIn, and 40+ platforms. No more account bans or spending limits.
           </p>
         </div>
@@ -95,7 +101,7 @@ const services = [
                 <CardContent>
                   <ul className="space-y-2 mb-6">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
+                      <li key={featureIndex} className="flex items-center text-sm text-white">
                         <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3" />
                         {feature}
                       </li>

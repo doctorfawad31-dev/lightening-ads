@@ -28,13 +28,18 @@ const CTA = () => {
             </div>
           </div>
           
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+          {/* <h2 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Ready to Scale Your Business?
             </span>
+          </h2> */}
+           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight px-4">
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+                 Ready to Scale Your Business?
+            </span>{" "}
+           
           </h2>
-          
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
             Join 500+ successful businesses using our premium advertising accounts and expert management services.
           </p>
 
