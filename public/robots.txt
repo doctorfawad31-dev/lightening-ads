@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lightning-ads.vercel.app/sitemap.xml
