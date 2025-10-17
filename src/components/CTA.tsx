@@ -21,7 +21,7 @@ const CTA = () => {
       <div className="absolute bottom-20 right-20 md:w-96 md:h-96 w-56 h-56 bg-electric-purple/20 rounded-full blur-3xl animate-pulse" />
       
       <div className="container mx-auto md:px-6 px-3 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto md:text-center">
           <div className="flex justify-center mb-8">
             <div className="p-4 bg-gradient-primary rounded-2xl shadow-glow">
               <Zap className="md:h-12 md:w-12 sm:h-8 sm:w-8 h-5 w-5 text-foreground" />
