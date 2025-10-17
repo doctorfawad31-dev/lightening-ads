@@ -30,8 +30,13 @@ const Benefits = () => {
   ];
 
   return (
+<<<<<<< HEAD
     <section className="py-10">
       <div className="container mx-auto md:px-6 px-3">
+=======
+    <section className="py-20">
+      <div className="container mx-auto px-6">
+>>>>>>> 7e137b473e9f3613af3aff4e0b7ecda79ef471e5
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div>
@@ -40,12 +45,20 @@ const Benefits = () => {
                 Why Choose Lightning Ads?
               </span>
             </h2> */}
+<<<<<<< HEAD
             <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight md:px-4 px-2">
+=======
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
+>>>>>>> 7e137b473e9f3613af3aff4e0b7ecda79ef471e5
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Why Choose Lightning Ads?
               </span>{" "}
             </h2>
+<<<<<<< HEAD
             <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto md:px-4 px-2">
+=======
+            <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
+>>>>>>> 7e137b473e9f3613af3aff4e0b7ecda79ef471e5
               We provide premium marketing agency accounts that eliminate the
               biggest pain points: account bans, spending limits, and approval
               delays. Focus on scaling, not account management.
@@ -85,11 +98,19 @@ const Benefits = () => {
             </div>
 
             {/* Stats Overlay */}
+<<<<<<< HEAD
             <div className="absolute -bottom-6 lg:-left-6 -left-2 bg-card border border-border rounded-xl sm:p-6 p-1.5 shadow-glow">
               <div className="md:text-2xl text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
                 $2.5M+
               </div>
               <div className="md:text-sm text-xs text-muted-foreground">
+=======
+            <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-6 shadow-glow">
+              <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+                $2.5M+
+              </div>
+              <div className="text-sm text-muted-foreground">
+>>>>>>> 7e137b473e9f3613af3aff4e0b7ecda79ef471e5
                 Revenue Generated This Month
               </div>
             </div>
