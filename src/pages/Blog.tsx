@@ -109,7 +109,7 @@ const Blog = () => {
         
         {/* Hero Section */}
         <section className="relative md:pt-20 pt-12 md:pb-16 pb-8 overflow-hidden">
-          <div className="container mx-auto px-6 py-10">
+          <div className="container mx-auto px-6 md:py-20 py-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
@@ -141,7 +141,7 @@ const Blog = () => {
       </section>
 
       {/* Featured Post */}
-      <section className="py-10">
+      <section className="md:py-20 py-10">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">
@@ -195,7 +195,7 @@ const Blog = () => {
       </section>
 
       {/* Blog Posts Grid */}
-      <section className="py-10 bg-card/20">
+      <section className="md:py-20 py-10 bg-card/20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">
@@ -260,7 +260,7 @@ const Blog = () => {
       </section>
 
       {/* Newsletter Signup */}
-      <section className="py-10">
+      <section className="md:py-20 py-10">
         <div className="container mx-auto px-6">
           <Card className="max-w-2xl mx-auto text-center border-border/50 bg-gradient-primary/5">
             <CardHeader>

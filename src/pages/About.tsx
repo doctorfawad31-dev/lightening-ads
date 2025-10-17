@@ -105,7 +105,7 @@ const About = () => {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-10">
+      <section className="md:py-20 py-10">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -140,7 +140,7 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-10 bg-card/20">
+      <section className="md:py-20 py-10 bg-card/20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
@@ -175,7 +175,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-10">
+      <section className="md:py-20 py-10">
         <div className="container mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto">
           

@@ -192,7 +192,7 @@ const Services = () => {
           </div>
 
           {/* Content (Responsive Alignment) */}
-          <div className="relative z-10 container mx-auto px-6 flex items-center justify-center lg:justify-start lg:text-left">
+          <div className="relative z-10 container mx-auto px-6 flex items-center justify-center lg:justify-start lg:text-left text-center">
             <div className="max-w-3xl mt-10 mx-auto lg:mx-0">
               <h1 className="sm:text-4xl text-3xl md:text-6xl font-bold mb-6">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
@@ -215,9 +215,9 @@ const Services = () => {
         </section>
 
         {/* Platform Services */}
-        <section className="py-10 bg-card/20">
+        <section className="md:py-20 py-10 bg-card/20">
           <div className="container mx-auto px-6">
-            <div className="mb-16">
+            <div className="mb-16 text-center">
             
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
@@ -285,9 +285,9 @@ const Services = () => {
         </section>
 
         {/* Main Services */}
-        <section className="py-10">
+        <section className="md:py-20 py-10">
           <div className="container mx-auto px-6">
-            <div className="mb-16">
+            <div className="mb-16 text-center">
               {/* <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                 </span>
@@ -357,7 +357,7 @@ const Services = () => {
         </section>
 
         {/* Visual Sections with Images */}
-        <section className="py-10 bg-card/20">
+        <section className="md:py-20 py-10 bg-card/20">
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
               <div>

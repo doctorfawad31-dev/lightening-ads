@@ -151,7 +151,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Form & Office Info */}
-      <section className="py-10">
+      <section className="md:py-20 py-10">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
@@ -263,7 +263,7 @@ const Contact = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-10 bg-card/20">
+      <section className="md:py-20 py-10 bg-card/20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">

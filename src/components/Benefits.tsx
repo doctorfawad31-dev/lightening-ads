@@ -30,7 +30,7 @@ const Benefits = () => {
   ];
 
   return (
-    <section className="py-10">
+    <section className="md:py-20 py-10">
       <div className="container mx-auto md:px-6 px-3">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -40,12 +40,12 @@ const Benefits = () => {
                 Why Choose Lightning Ads?
               </span>
             </h2> */}
-            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight md:px-4 px-2">
+            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight md:px-0 px-2">
               <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Why Choose Lightning Ads?
               </span>{" "}
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto md:px-4 px-2">
+            <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto md:px-0 px-2">
               We provide premium marketing agency accounts that eliminate the
               biggest pain points: account bans, spending limits, and approval
               delays. Focus on scaling, not account management.

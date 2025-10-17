@@ -14,7 +14,7 @@ const TermsOfService = () => {
       />
       <div className="min-h-screen bg-background">
         <Header />
-        <main className="container mx-auto px-6 py-16 max-w-4xl">
+        <main className="container mx-auto px-6 md:py-24 py-10 max-w-4xl">
           <div className="prose prose-gray dark:prose-invert max-w-none">
             <h1 className="text-4xl font-bold mb-8 text-foreground">Terms of Service</h1>
           

@@ -42,7 +42,7 @@ const ConsultationSection = () => {
   return (
     <section className="py-10 bg-background">
       <div className="container mx-auto md:px-6 px-3">
-        <div className="md:mb-8 mb-4">
+        <div className="md:mb-8 mb-4 text-center">
           {/* <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Got a Query? Schedule a Free

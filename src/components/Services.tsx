@@ -58,9 +58,9 @@ const services = [
   ]
 
   return (
-    <section id="services" className="py-10 bg-card/20">
+    <section id="services" className="md:py-20 py-10 bg-card/20">
       <div className="container mx-auto md:px-6 px-3">
-        <div className="md:mb-16 mb-6">
+        <div className="md:mb-16 mb-6 md:text-center">
           {/* <h2 className="sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Agency Account Solutions
