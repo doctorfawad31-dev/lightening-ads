@@ -173,7 +173,7 @@ const Services = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative overflow-hidden mt-8 min-h-[400px] sm:min-h-[500px] md:min-h-[700px] flex items-center justify-center lg:justify-start">
+        <section className="relative overflow-hidden md:mt-8 mt-4 min-h-[380px] md:min-h-[700px] flex items-center justify-center lg:justify-start">
           {/* Background */}
           <div className="absolute inset-0 overflow-hidden">
             <img
@@ -194,19 +194,19 @@ const Services = () => {
           {/* Content (Responsive Alignment) */}
           <div className="relative z-10 container mx-auto px-6 flex items-center justify-center lg:justify-start lg:text-left text-center">
             <div className="max-w-3xl mt-10 mx-auto lg:mx-0">
-              <h1 className="sm:text-4xl text-3xl md:text-6xl font-bold mb-6">
+              <h1 className="text-[23.4px] md:text-6xl font-bold mb-6">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                   Advertising Services
                 </span>
               </h1>
-              <p className="md:text-xl text-lg text-muted-foreground mb-8">
+              <p className="md:text-xl text-[13px] text-muted-foreground mb-8">
                 Comprehensive agency account solutions across all major
                 advertising platforms. Scale your campaigns without
                 restrictions.
               </p>
               <Button
                 size="lg"
-                className="bg-gradient-primary hover:shadow-electric transition-all duration-300"
+                className="bg-gradient-primary hover:shadow-electric transition-all duration-300 md:text-base text-[13px]"
               >
                 Get Started Today
               </Button>
@@ -219,12 +219,12 @@ const Services = () => {
           <div className="container mx-auto px-6">
             <div className="mb-16 text-center">
             
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
+              <h2 className="text-[22px] md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                   Supported Platforms
                 </span>{" "}
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
+              <p className="text-[13.1px] md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
                 Access premium agency accounts across all major advertising
                 platforms with unlimited spending capabilities.
               </p>
@@ -248,10 +248,10 @@ const Services = () => {
                       <div className="p-3 bg-gradient-primary/10 rounded-lg w-fit mb-4 group-hover:shadow-glow transition-all duration-300">
                         <IconComponent className="h-6 w-6 text-primary" />
                       </div>
-                      <CardTitle className="text-xl mb-2">
+                      <CardTitle className="md:text-xl text-[19.5px] mb-2">
                         {service.title}
                       </CardTitle>
-                      <CardDescription className="text-muted-foreground">
+                      <CardDescription className="text-muted-foreground text-base text-[13.2px]">
                         {service.description}
                       </CardDescription>
                     </CardHeader>
@@ -261,7 +261,7 @@ const Services = () => {
                         {service.features.map((feature, featureIndex) => (
                           <li
                             key={featureIndex}
-                            className="flex items-center text-sm text-white"
+                            className="flex items-center md:text-sm text-[13.3px] text-white"
                           >
                             <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3" />
                             {feature}
@@ -271,7 +271,7 @@ const Services = () => {
 
                       <Button
                         variant="outline"
-                        className="w-full group border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300"
+                        className="w-full group border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300 md:text-base text-[13.2px]"
                       >
                         Learn More
                         <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -292,12 +292,12 @@ const Services = () => {
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                 </span>
                 </h2> */}
-               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
+               <h2 className="text-[22px] md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                 Core Services
                 </span>{" "}
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
+              <p className="text-[13.1px] md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
                 Complete agency account management and optimization services.
               </p>
             </div>
@@ -320,10 +320,10 @@ const Services = () => {
                       <div className="p-3 bg-gradient-primary/10 rounded-lg w-fit mb-4 group-hover:shadow-glow transition-all duration-300">
                         <IconComponent className="h-6 w-6 text-primary" />
                       </div>
-                      <CardTitle className="text-xl mb-2">
+                      <CardTitle className="md:text-xl text-[19.5px] mb-2">
                         {service.title}
                       </CardTitle>
-                      <CardDescription className="text-muted-foreground">
+                      <CardDescription className="text-muted-foreground md:text-base text-[13px]">
                         {service.description}
                       </CardDescription>
                     </CardHeader>
@@ -333,7 +333,7 @@ const Services = () => {
                         {service.features.map((feature, featureIndex) => (
                           <li
                             key={featureIndex}
-                            className="flex items-center text-sm text-white"
+                            className="flex items-center md:text-sm text-[13.2px] text-white"
                           >
                             <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3" />
                             {feature}
@@ -343,7 +343,7 @@ const Services = () => {
 
                       <Button
                         variant="outline"
-                        className="w-full group border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300"
+                        className="w-full group border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300 md:text-base text-[13.2px]"
                       >
                         Learn More
                         <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -366,12 +366,12 @@ const Services = () => {
                     
                   </span>
                 </h3> */}
-                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
+                 <h2 className="text-[22px] md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight md:text-left text-center">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                  Advanced Analytics & Reporting
                 </span>{" "}
               </h2>
-                <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
+                <p className="text-[13.1px] md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
                   Get comprehensive insights into your campaign performance
                   across all platforms with our advanced dashboard and reporting
                   tools.
@@ -379,19 +379,19 @@ const Services = () => {
                 <br />
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center text-white">
-                    <div className="w-2 h-2 bg-primary rounded-full mr-3" />
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3 text-base text-[14.9px]" />
                     Real-time performance tracking
                   </li>
                   <li className="flex items-center text-white">
-                    <div className="w-2 h-2 bg-primary rounded-full mr-3" />
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3 text-base text-[14.9px]" />
                     Cross-platform campaign analysis
                   </li>
                   <li className="flex items-center text-white">
-                    <div className="w-2 h-2 bg-primary rounded-full mr-3" />
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3 text-base text-[14.9px]" />
                     Custom reporting dashboards
                   </li>
                 </ul>
-                <Button className="bg-gradient-primary hover:shadow-electric transition-all duration-300">
+                <Button className="bg-gradient-primary hover:shadow-electric transition-all duration-300 md:text-base text-[13.3px]">
                   View Demo
                 </Button>
               </div>
@@ -414,31 +414,31 @@ const Services = () => {
               </div>
               <div>
              
-                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
+                 <h2 className="text-[22px] md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight md:text-left text-center">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                    Scaling Solutions
                 </span>{" "}
               </h2>
-                <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
+                <p className="text-[13.1px] md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
                   Rapidly scale your advertising campaigns with our proven
                   methodologies and advanced automation tools.
                 </p>
                 <br />
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center text-white">
-                    <div className="w-2 h-2 bg-primary rounded-full mr-3" />
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3 text-base text-[14.9px]" />
                     Automated campaign optimization
                   </li>
                   <li className="flex items-center text-white">
-                    <div className="w-2 h-2 bg-primary rounded-full mr-3" />
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3 text-base text-[14.9px]" />
                     Multi-platform scaling strategies
                   </li>
                   <li className="flex items-center text-white">
-                    <div className="w-2 h-2 bg-primary rounded-full mr-3" />
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3 text-base text-[14.9px]" />
                     Advanced audience targeting
                   </li>
                 </ul>
-                <Button className="bg-gradient-primary hover:shadow-electric transition-all duration-300">
+                <Button className="bg-gradient-primary hover:shadow-electric transition-all duration-300 md:text-base text-[13.2px]">
                   Learn More
                 </Button>
               </div>
