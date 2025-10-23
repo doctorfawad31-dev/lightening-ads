@@ -61,13 +61,13 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex md:space-x-6 space-x-3 md:text-sm text-xs text-muted-foreground">
+          <div className="flex md:space-x-6 space-x-3 md:text-sm text-[11.3px] text-muted-foreground">
             <a href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</a>
             <a href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</a>
             <a href="/cookie-policy" className="hover:text-primary transition-colors">Cookie Policy</a>
           </div>
-          <div className="text-sm text-muted-foreground mt-4 md:mb-0">
-            © 2024 Lightning Ads. All rights reserved.
+          <div className="md:text-sm text-[12.9px] text-muted-foreground mt-4 md:mt-0 md:text-left text-center">
+            © 2025 Lightning Ads. All rights reserved.
           </div>
         </div>
       </div>

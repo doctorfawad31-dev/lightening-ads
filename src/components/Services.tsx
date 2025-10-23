@@ -60,19 +60,19 @@ const services = [
   return (
     <section id="services" className="md:py-20 py-10 bg-card/20">
       <div className="container mx-auto md:px-6 px-3">
-        <div className="md:mb-16 mb-6 md:text-center">
+        <div className="md:mb-16 mb-6 text-center">
           {/* <h2 className="sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Agency Account Solutions
             </span>
           </h2> */}
-           <h2 className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight md:px-4">
+           <h2 className="text-[22px] md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight md:px-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-               Agency Account Solutions
+               Agency Ads Account Solutions
             </span>{" "}
            
           </h2>
-          <p className="text-xs sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto md:px-4">
+          <p className="text-[11.1px] md:text-lg text-white leading-relaxed max-w-3xl mx-auto md:px-4">
             Access premium, aged advertising accounts across Google, Meta, TikTok, Snapchat, LinkedIn, and 40+ platforms. No more account bans or spending limits.
           </p>
         </div>
@@ -93,7 +93,7 @@ const services = [
                     <IconComponent className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
-                  <CardDescription className="text-muted-foreground">
+                  <CardDescription className="text-muted-foreground md:text-base text-[13.2px]">
                     {service.description}
                   </CardDescription>
                 </CardHeader>
@@ -101,7 +101,7 @@ const services = [
                 <CardContent>
                   <ul className="space-y-2 mb-6">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-sm text-white">
+                      <li key={featureIndex} className="flex items-center md:text-sm text-[13.2px] text-white">
                         <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3" />
                         {feature}
                       </li>
@@ -110,7 +110,7 @@ const services = [
                   
                   <Button 
                     variant="outline" 
-                    className="w-full group border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300"
+                    className="w-full group border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300 md:text-base text-[13.2px]"
                   >
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -124,7 +124,7 @@ const services = [
         <div className="text-center mt-12">
           <Button 
             size="lg"
-            className="bg-gradient-primary hover:shadow-electric transition-all duration-300 px-8 py-6 md:text-lg"
+            className="bg-gradient-primary hover:shadow-electric transition-all duration-300 px-8 py-6 md:text-lg text-[13.3px]"
           >
             View All Services
           </Button>

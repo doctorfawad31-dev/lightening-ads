@@ -62,15 +62,15 @@ const Testimonials = () => {
   return (
     <section className="md:py-20 py-10 bg-card/20 overflow-hidden">
       <div className="container mx-auto md:px-6 px-3">
-        <div className="md:text-center mb-12">
+        <div className="text-center mb-12">
         
-           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight md:px-4">
+           <h2 className="text-[22px] md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight md:px-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               What Our Clients Say
             </span>{" "}
            
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
+          <p className="text-[13.1px] md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
             Don't just take our word for it. Here's what industry leaders say about working with Lightning Ads.
           </p>
         </div>

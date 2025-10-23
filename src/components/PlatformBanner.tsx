@@ -59,17 +59,17 @@ const PlatformBanner = () => {
   ]
 
   return (
-    <section className="md:py-20 py-10 bg-background">
+    <section className="md:py-20 py-10 md:pb-0 pb-[93px] bg-background">
       <div className="container mx-auto md:px-6 px-3">
         {/* Main Content */}
-        <div className="max-w-4xl mx-auto mb-12 md:text-center">
-          <h2 className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight px-4">
+        <div className="max-w-4xl mx-auto mb-12 text-center">
+          <h2 className="text-[22px] md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight px-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Power Your Ads with Premium Agency Accounts
+              Premium Agency Account
             </span>{" "}
            
           </h2>
-          <p className="text-xs sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto px-4">
+          <p className="text-[11.3px] md:text-lg text-white leading-relaxed max-w-3xl mx-auto px-4">
             Get access to premium, aged advertising accounts across Google, Meta, TikTok, Snapchat, LinkedIn and 40+ platforms. Say goodbye to sudden bans and spending limits.
           </p>
         </div>

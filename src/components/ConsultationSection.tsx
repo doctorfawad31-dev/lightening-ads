@@ -42,7 +42,7 @@ const ConsultationSection = () => {
   return (
     <section className="py-10 bg-background">
       <div className="container mx-auto md:px-6 px-3">
-        <div className="md:mb-8 mb-4 md:text-center">
+        <div className="md:mb-8 mb-4 text-center">
           {/* <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               Got a Query? Schedule a Free
@@ -51,14 +51,13 @@ const ConsultationSection = () => {
             </span>
           </h2> */}
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
+          <h2 className="text-[22px] md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Got a Query? Schedule a Free Consultation Session with Our Ad
-              Expert
+              Got a Query? Schedule a Free Consultation
             </span>{" "}
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto mb-2">Schedule a call:</p>
-          <Button className="bg-gradient-primary hover:shadow-electric transition-all duration-300 group">
+          {/* <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto mb-2">Schedule a call:</p> */}
+          <Button className="bg-gradient-primary hover:shadow-electric transition-all duration-300 group md:text-base text-[13px]">
             Get Started{" "}
             <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
           </Button>
@@ -177,7 +176,7 @@ const ConsultationSection = () => {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="md:w-full bg-gradient-primary hover:shadow-electric transition-all duration-300 md:text-lg py-6 group"
+                className="md:w-full bg-gradient-primary hover:shadow-electric transition-all duration-300 md:text-lg text-[13.2px] py-6 group"
               >
                 Submit{" "}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

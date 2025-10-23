@@ -21,7 +21,7 @@ const CTA = () => {
       <div className="absolute bottom-20 right-20 md:w-96 md:h-96 w-56 h-56 bg-electric-purple/20 rounded-full blur-3xl animate-pulse" />
       
       <div className="container mx-auto md:px-6 px-3 relative z-10">
-        <div className="max-w-4xl mx-auto md:text-center">
+        <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-8">
             <div className="p-4 bg-gradient-primary rounded-2xl shadow-glow">
               <Zap className="md:h-12 md:w-12 sm:h-8 sm:w-8 h-5 w-5 text-foreground" />
@@ -33,13 +33,13 @@ const CTA = () => {
               Ready to Scale Your Business?
             </span>
           </h2> */}
-           <h2 className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight md:px-4 px-1">
+           <h2 className="text-[22px] md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight md:px-4 px-1">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
                  Ready to Scale Your Business?
             </span>{" "}
            
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto md:px-4 px-1">
+          <p className="text-[13.1px] md:text-lg text-white leading-relaxed max-w-3xl mx-auto md:px-4 px-1 mb-2">
             Join 500+ successful businesses using our premium advertising accounts and expert management services.
           </p>
 
@@ -55,14 +55,14 @@ const CTA = () => {
             />
             <Button 
               type="submit"
-              className="bg-gradient-primary hover:shadow-electric transition-all duration-300 px-8 py-3 md:text-lg group"
+              className="bg-gradient-primary hover:shadow-electric transition-all duration-300 px-8 py-3 md:text-lg text-[13px] group"
             >
               Get Started
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </form>
 
-          <p className="text-sm text-muted-foreground mb-8">
+          <p className="md:text-sm text-[12.2px] text-muted-foreground mb-8">
             No credit card required • Setup in 24 hours • Cancel anytime
           </p>
 
@@ -71,32 +71,32 @@ const CTA = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="px-8 py-3 text-lg border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300"
+              className="px-8 py-3 md:text-lg text-[17.3px] border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300"
             >
               Schedule a Call
             </Button>
             <Button 
               variant="ghost" 
               size="lg"
-              className="px-8 py-3 text-lg hover:bg-primary/10 transition-all duration-300"
+              className="px-8 py-3 md:text-lg text-[17px] hover:bg-primary/10 transition-all duration-300"
             >
               View Pricing
             </Button>
           </div>
 
           {/* Trust Indicators */}
-          <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-border/30">
+          <div className="grid grid-cols-3 gap-8 md:mt-16 mt-4 pt-8 border-t border-border/30">
             <div className="text-center">
-              <div className="text-md sm:text-xl md:text-3xl font-bold text-primary">24/7</div>
-              <div className="md:text-sm text-xs text-muted-foreground mt-1">Support Available</div>
+              <div className="text-[13.6px] md:text-3xl font-bold text-primary">24/7</div>
+              <div className="md:text-sm text-[11.4px] text-muted-foreground mt-1">Support Available</div>
             </div>
             <div className="text-center">
-              <div className="text-md sm:text-xl md:text-3xl font-bold text-primary">99.9%</div>
-              <div className="md:text-sm text-xs text-muted-foreground mt-1">Uptime Guarantee</div>
+              <div className="text-[13.6px] md:text-3xl font-bold text-primary">99.9%</div>
+              <div className="md:text-sm text-[11.4px] text-muted-foreground mt-1">Uptime Guarantee</div>
             </div>
             <div className="text-center">
-              <div className="text-md sm:text-xl md:text-3xl font-bold text-primary">30-Day</div>
-              <div className="md:text-sm text-xs text-muted-foreground mt-1">Money Back</div>
+              <div className="text-[13.6px] md:text-3xl font-bold text-primary">30-Day</div>
+              <div className="md:text-sm text-[11.4px] text-muted-foreground mt-1">Money Back</div>
             </div>
           </div>
         </div>
