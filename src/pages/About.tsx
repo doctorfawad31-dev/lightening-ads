@@ -70,12 +70,12 @@ const About = () => {
           <div className="container mx-auto px-6 py-12">
             <div className="max-w-4xl mx-auto text-center">
             
-               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
+               <h2 className="text-[23.4px] md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                   About Lightning Ads
                 </span>{" "}
               </h2>
-            <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
+            <p className="text-[13px] md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
               We're the leading provider of premium agency advertising accounts, helping businesses scale their campaigns without restrictions across all major platforms.
             </p>
             
@@ -89,10 +89,10 @@ const About = () => {
                       <div className="mx-auto p-2 bg-gradient-primary/10 rounded-lg w-fit mb-3">
                         <IconComponent className="h-5 w-5 text-primary" />
                       </div>
-                      <div className="text-2xl md:text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-1">
+                      <div className="text-[19.9px] md:text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-1">
                         {stat.number}
                       </div>
-                      <div className="text-xs text-muted-foreground">
+                      <div className="text-[11.1px] text-muted-foreground">
                         {stat.label}
                       </div>
                     </CardContent>
@@ -109,19 +109,19 @@ const About = () => {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
+              <h2 className="text-[22px] md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight text-center md:text-left">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                   Our Story
                 </span>{" "}
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
+              <p className="text-[12.9px] md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
                 Lightning Ads was founded with a simple mission: to remove the barriers that prevent businesses from scaling their advertising campaigns. We recognized that account restrictions, spending limits, and platform bans were holding back countless entrepreneurs and agencies.
               </p>
               <br />
-              <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
+              <p className="text-[12.9px] md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
                 Since our inception, we've built relationships with premium account providers across all major advertising platforms, allowing us to offer aged, warmed accounts with unlimited spending capabilities and high trust scores.
               </p><br />
-              <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
+              <p className="text-[12.9px] md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
                 Today, we serve over 500 active clients, managing more than $50M in monthly ad spend across Google, Meta, TikTok, Snapchat, and 40+ other platforms.
               </p><br />
               <Button className="bg-gradient-primary hover:shadow-electric transition-all duration-300">
@@ -143,12 +143,12 @@ const About = () => {
       <section className="md:py-20 py-10 bg-card/20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
+            <h2 className="text-[22px] md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                   Our Values
                 </span>{" "}
               </h2>
-            <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
+            <p className="text-[12.9px] md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
               The principles that guide everything we do and shape our commitment to client success.
             </p>
           </div>
@@ -162,8 +162,8 @@ const About = () => {
                     <div className="mx-auto p-4 bg-gradient-primary/10 rounded-lg w-fit mb-4 group-hover:shadow-glow transition-all duration-300">
                       <IconComponent className="h-8 w-8 text-primary" />
                     </div>
-                    <CardTitle className="text-2xl mb-4">{value.title}</CardTitle>
-                    <CardDescription className="text-muted-foreground text-base">
+                    <CardTitle className="md:text-2xl text-[23px] mb-4">{value.title}</CardTitle>
+                    <CardDescription className="text-muted-foreground md:text-base text-[14.8px]">
                       {value.description}
                     </CardDescription>
                   </CardHeader>
@@ -179,19 +179,19 @@ const About = () => {
         <div className="container mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto">
           
-             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
+             <h2 className="text-[22px] md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight ">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                     Ready to Scale Your Campaigns?
                 </span>{" "}
               </h2>
-            <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
+            <p className="text-[12.9px] md:text-lg text-white leading-relaxed max-w-3xl mx-auto ">
               Join hundreds of successful advertisers who trust Lightning Ads for their agency account needs.
             </p> <br />
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-primary hover:shadow-electric transition-all duration-300">
+              <Button size="lg" className="bg-gradient-primary hover:shadow-electric transition-all duration-300 md:text-base text-[13.1px]">
                 Get Agency Accounts
               </Button>
-              <Button size="lg" variant="outline" className="border-primary/30 hover:border-primary hover:bg-primary/10">
+              <Button size="lg" variant="outline" className="border-primary/30 hover:border-primary hover:bg-primary/10 md:text-base text-[13.1px]">
                 Contact Sales
               </Button>
             </div>
