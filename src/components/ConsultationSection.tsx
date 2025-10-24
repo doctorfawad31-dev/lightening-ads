@@ -28,16 +28,66 @@ const ConsultationSection = () => {
     resolver: zodResolver(formSchema),
   });
 
-  const onSubmit = async (data: FormData) => {
-    try {
-      // Here you would typically send the data to your backend
-      console.log("Form submitted:", data);
+  const onSubmit = async (formData: FormData) => {
+  try {
+    const response = await fetch("https://softnixt-mail-management-tool-v1.vercel.app/api/email/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-api-key": import.meta.env.VITE_API_KEY,
+      },
+      body: JSON.stringify({
+        smtpConfig: {
+          host: "smtp.gmail.com",
+          port: 587,
+          secure: false,
+          user: import.meta.env.VITE_SMTP_USER,
+          pass: import.meta.env.VITE_SMTP_PASS,
+        },
+        to: "service@lightning-ads.com",
+        subject: `New Customer Wants Your ${formData.advertisingOn} Ads Services!`,
+        text: `
+New Customer Message:
+
+Name: ${formData.fullName}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Business: ${formData.business}
+Advertising On: ${formData.advertisingOn}
+Budget: ${formData.budget}
+`,
+        html: `
+<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 24px; border-radius: 10px; color: #000000; max-width: 600px; margin: auto; border: 1px solid #e0e0e0;">
+  <h2 style="color: #92000a; text-align: center; margin-bottom: 20px;">New Contact Message</h2>
+  <div style="background: #ffffff; border-radius: 8px; padding: 16px; border: 1px solid #ddd;">
+    <p style="margin: 10px 0; font-size: 15px;"><strong style="color:#92000a;">Name:</strong> ${formData.fullName}</p>
+    <p style="margin: 10px 0; font-size: 15px;"><strong style="color:#92000a;">Email:</strong> ${formData.email}</p>
+    <p style="margin: 10px 0; font-size: 15px;"><strong style="color:#92000a;">Phone:</strong> ${formData.phone}</p>
+    <p style="margin: 10px 0; font-size: 15px;"><strong style="color:#92000a;">Business:</strong> ${formData.business}</p>
+    <p style="margin: 10px 0; font-size: 15px;"><strong style="color:#92000a;">Advertising On:</strong> ${formData.advertisingOn}</p>
+    <p style="margin: 10px 0; font-size: 15px;"><strong style="color:#92000a;">Budget:</strong> ${formData.budget}</p>
+  </div>
+  <p style="text-align: center; font-size: 13px; color: #777; margin-top: 25px;">
+    This message was sent from Lightning-ads's <strong style="color:#000;">Contact Form</strong>.
+  </p>
+</div>
+`,
+        from: import.meta.env.VITE_SMTP_USER,
+      }),
+    });
+
+    const result = await response.json();
+    if (response.ok) {
       toast.success("Thank you! We'll contact you soon.");
       reset();
-    } catch (error) {
+    } else {
       toast.error("Something went wrong. Please try again.");
     }
-  };
+  } catch (err) {
+    console.error("Submission error:", err);
+    toast.error("Something went wrong. Please try again.");
+  }
+};
 
   return (
     <section className="py-10 bg-background">

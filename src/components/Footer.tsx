@@ -22,15 +22,15 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>contact@lightningads.com</span>
+                <span>service@lightning-ads.com</span>
               </div>
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+971 58 543 4233</span>
               </div>
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <MapPin className="h-4 w-4" />
-                <span>New York, NY 10001</span>
+                <span>Dubai Silicon Oasis</span>
               </div>
             </div>
           </div>
