@@ -37,13 +37,13 @@ const Hero = () => {
      {/* Content (Responsive alignment) */}
 <div className="relative z-10 container mx-auto px-[16px] md:px-6 lg:px-8 md:py-0 py-[19px] flex items-center justify-center lg:justify-start">
   <div className="max-w-xl lg:text-left">
-    <h1 className="text-[23.4px] md:text-5xl xl:text-6xl font-bold mb-4 leading-tight md:text-left text-center">
+    <h1 className="text-[23.4px] md:text-5xl xl:text-5xl font-bold mb-4 leading-tight md:text-left text-center">
       <span className="bg-gradient-primary bg-clip-text text-transparent">
         High-Trust Marketing Solutions
       </span>
     </h1>
 
-    <p className="text-[13px] md:text-base text-foreground/80 mb-6 max-w-md sm:max-w-lg mx-auto lg:mx-0 md:text-left text-center">
+    <p className="text-[13px] md:text-base text-foreground/80 mb-6 max-w-md sm:max-w-lg lg:mx-0 md:text-left text-center">
       Access aged, warmed marketing agency accounts with unlimited spending limits. 
       Skip restrictions and scale immediately.
     </p>

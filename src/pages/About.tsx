@@ -66,7 +66,7 @@ const About = () => {
         <Header />
         
         {/* Hero Section with Stats */}
-        <section className="relative md:pt-20 pt-12 md:pb-12 overflow-hidden">
+        <section className="relative md:pt-44 pt-12 md:pb-12 overflow-hidden">
           <div className="container mx-auto px-6 py-12">
             <div className="max-w-4xl mx-auto text-center">
             
